@@ -15,20 +15,27 @@ background-color: #F1F1F1;
 }
 
 .nav_menu_box {
-  background-color: purple;
+
   margin: 0 auto;
-  width: 550px;
+  width: 520px;
   height: 100px;
   color: #FFFFFF;
 }
+
 
 .nav_text_styles {
   position: relative;
   display: inline-block;
   margin: 0 10px 0 10px;
   width: 150px;
-  height: 100px;
+  height: 80px;
   font-size: 36px;
-  background-color: green;
   text-align: center;
+  border-size: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: #ffffff;
+    &:hover {
+      color: #9B9B9B;
+      border-bottom-color: #9B9B9B;
+    }
 }
