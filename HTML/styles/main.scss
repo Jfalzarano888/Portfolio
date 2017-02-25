@@ -12,9 +12,17 @@ background-color: #F1F1F1;
 
 }
 
-.nav_menu_text {
+.nav_menu_box {
   background-color: purple;
   margin: 0 auto;
   width: 400px;
+  height: 100px;
+  color: #FFFFFF;
+}
+
+.nav_menu_text {
+  display: inline-block;
+  margin: 40px 0 40px 0;
+  width: 150px;
   height: 100px;
 }
