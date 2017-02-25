@@ -9,4 +9,10 @@ html, body {
   height: 100px;
   background-color: #A22E2E; }
 
+.nav_menu_text {
+  background-color: purple;
+  margin: 0 auto;
+  width: 400px;
+  height: 100px; }
+
 /*# sourceMappingURL=main.css.map */
