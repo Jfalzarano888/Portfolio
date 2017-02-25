@@ -1,8 +1,8 @@
 html, body {
   margin: 0 auto;
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 1024px;
+  height: 1024px;
   font-family: Helvetica, "Times New Roman", sans-serif;
   background-color: #F1F1F1; }
 
