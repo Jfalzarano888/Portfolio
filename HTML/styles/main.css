@@ -6,14 +6,14 @@ html, body {
   background-color: #F1F1F1; }
 
 .background_box {
-  width: 100%;
+  width: 1024px;
   height: 100px;
   background-color: #A22E2E; }
 
 .nav_menu_box {
   background-color: purple;
   margin: 0 auto;
-  width: 400px;
+  width: 500px;
   height: 100px;
   color: #FFFFFF; }
 
