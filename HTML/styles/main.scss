@@ -1,16 +1,21 @@
+$color1: #F1F1F1;
+$color2: #A22E2E;
+$color3: #9B9B9B;
+$inline: inline-block;
+
 html, body {
 margin: 0 auto;
 position: relative;
 width: 1024px;
 height: 1024px;
 font-family: Helvetica, "Times New Roman", sans-serif;
-background-color: #F1F1F1;
+background-color: $color1;
 }
 
 .background_box {
   width: 1024px;
   height: 100px;
-  background-color: #A22E2E;
+  background-color: $color2;
 
 }
 
@@ -35,7 +40,41 @@ background-color: #F1F1F1;
   border-bottom-style: solid;
   border-bottom-color: #ffffff;
     &:hover {
-      color: #9B9B9B;
-      border-bottom-color: #9B9B9B;
+      color: $color3;
+      border-bottom-color: $color3;
     }
+}
+
+.wrapper {
+  text-align: center;
+  height: 462px;
+  background-color: yellow;
+  margin: 0 auto;
+}
+
+.top_main {
+  background-color: #D8D8D8;
+  width: 1024px;
+  height: 462px;
+  border-bottom-color: $color2;
+  border-bottom-style: solid;
+}
+
+.feature1 {
+  display: $inline;
+  height: 442px;
+  width: (1000/3) * 1px;
+  background-color: purple;
+}
+.feature2 {
+  display: $inline;
+  height: 442px;
+  width: (1000/3) * 1px;
+  background-color: orange;
+}
+.feature3 {
+  display: $inline;
+  height: 442px;
+  width: (1000/3) * 1px;
+  background-color: green;
 }
