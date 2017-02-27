@@ -46,19 +46,19 @@ html, body {
   border-bottom-style: solid; }
 
 .feature1 {
-  display: inline-block;
+  float: left;
   height: 442px;
   width: 333.33333px;
   background-color: purple; }
 
 .feature2 {
-  display: inline-block;
+  float: left;
   height: 442px;
   width: 333.33333px;
   background-color: orange; }
 
 .feature3 {
-  display: inline-block;
+  float: left;
   height: 442px;
   width: 333.33333px;
   background-color: green; }
