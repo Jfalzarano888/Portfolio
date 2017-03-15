@@ -1,88 +1,530 @@
+@import 'reset';
+
 $color1: #F1F1F1;
 $color2: #A22E2E;
 $color3: #9B9B9B;
 $color4: #D8D8D8;
-
 $inline: inline-block;
 $fl: left;
+$transition: linear .25s;
+$margin: 20px auto;
+$text-shadow: 10px 10px 40px #999;
+$box-shadow: 0 0 10px 5px #888;
+$border-style: solid;
+$none: 0;
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
 
 html,
 body {
-
 position: relative;
 width: 1024px;
-height: 1024px;
+height: 100%;
 margin: 0 auto;
 background-color: $color1;
 font-family: Helvetica, "Times New Roman", sans-serif;
+font-size: 16px;
+}
 
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px 0 0 0;
+  color: $color2;
+  transition: $transition;
+}
+
+h2 {
+  margin: $margin;
+  transition: $transition;
+  font-size: 2.25rem;
+  font-weight: 400;
+
+}
+
+h3 {
+  transition: $transition;
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.25rem;
 }
 
 .background-box {
-  width: 1024px;
+  width: 100%;
   height: 100px;
+  margin: 0 auto;
   background-color: $color2;
-
+  box-shadow: $box-shadow;
 }
 
 .nav-menu-box {
-  width: 520px;
-  height: 100px;
+  width: 500px;
+  height: 50px;
   margin: 0 auto;
-  color: #FFFFFF;
+  padding: 30px 0 0 0;
+  color: #FFF;
 }
 
-
 .nav-text-styles {
-  display: inline-block;
-  position: relative;
-  width: 150px;
-  height: 80px;
-  margin: 0 10px 0 10px;
-  border-width: 4px;
-  border-bottom-style: solid;
-  border-bottom-color: #fff;
-  font-size: 36px;
+  width: 160px;
+  float: $fl;
+  font-size: 1.60rem;
+  font-weight: 300;
   text-align: center;
+  transition: $transition;
 
-    &:hover {
-      border-bottom-color: $color3;
-      color: $color3;
-    }
+  &:hover a {
+    transition: $transition;
+    border-width: 1px;
+    border-style: $border-style;
+    border-right-width: $none;
+    border-left-width: $none;
+    border-color: $color4 $color2 $color4 $color2;
+    color: $color4;
+  }
 }
 
 .wrapper {
-  height: 462px;
-  margin: 0 auto;
-  background-color: yellow;
+  position: relative;
+  height: 450px;
+  padding: 30px 12px 40px 12px;
+  color: $color2;
   text-align: center;
 }
 
-.top_main {
+.top-main {
+  position: relative;
   width: 1024px;
-  height: 462px;
-  border-bottom-style: solid;
+  height: 550px;
+  border-width: 4px;
+  border-bottom-style: $border-style;
   border-bottom-color: $color2;
   background-color: $color4;
+  box-shadow: $box-shadow;
+  z-index: 2;
+}
+
+.text-shrink {
+  width: 310px;
+  margin: 0 auto;
+  line-height: 1.625rem;
 }
 
 .feature1 {
   width: (1000 / 3) * 1px;
-  height: 442px;
+  height: 514px;
   float: $fl;
-  background-color: purple;
+  transition: $transition;
+
+   &:hover{
+     box-shadow: $box-shadow;
+     transition: $transition;
+  }
+}
+
+.feature1-image {
+  width: 180px;
+  height: 160px;
+  margin: $margin;
+  background: url('../svgs/pencil.svg') no-repeat center;
 }
 
 .feature2 {
   width: (1000 / 3) * 1px;
-  height: 442px;
+  height: 480px;
   float: $fl;
-  background-color: orange;
+  transition: $transition;
+
+    &:hover {
+    transition: $transition;
+    box-shadow: $box-shadow;
+ }
+}
+
+.feature2-image {
+  width: 180px;
+  height: 160px;
+  margin: $margin;
+  background: url('../svgs/networking.svg') no-repeat center;
 }
 
 .feature3 {
   width: (1000 / 3) * 1px;
-  height: 442px;
+  height: 514px;
   float: $fl;
-  background-color: green;
+  transition: $transition;
+
+  &:hover {
+  transition: $transition;
+  box-shadow: $box-shadow;
+  }
+}
+
+.feature3-image {
+  width: 180px;
+  height: 160px;
+  margin: $margin;
+  background: url('../svgs/laptop.svg') no-repeat center;
+}
+
+.banner-box {
+  position: relative;
+  width: 320px;
+  height: 80px;
+  margin: 0 auto;
+  background-color: $color2;
+  color: #FFF;
+  line-height: 40px;
+  text-align: center;
+  box-shadow: $box-shadow;
+}
+
+//page split here
+
+.bottom-main {
+  width: 1024px;
+  height: 100%;
+  max-height: 600px;
+  padding: 100px 0 0 0;
+  background-color: #F1F1F1;
+  box-shadow: $box-shadow;
+  z-index: 1;
+}
+
+
+.line {
+  width: 200px;
+  height: 2px;
+  margin: $margin;
+  transition: $transition;
+  background-color: $color2;
+}
+
+
+.call {
+  width: 70%;
+  height: 100px;
+  margin: 0 auto;
+  padding: 50px 0 0 0;
+  color: $color2;
+
+      &:hover .line {
+      width: 400px;
+      transition: $transition;
+    }
+}
+
+
+.phone-image {
+  width: 80px;
+  height: 80px;
+  margin: 0 20px 0 20px;
+  float: $fl;
+  background: url('../svgs/phone2small.svg') no-repeat top left 10px;
+}
+
+
+.delivered {
+  width: 70%;
+  height: 100px;
+  margin: 0 auto;
+  padding: 50px 0 0 0;
+  color: $color2;
+
+    &:hover .line {
+    width: 400px;
+    transition: $transition;
+  }
+}
+
+
+.delivered-image {
+  width: 80px;
+  height: 80px;
+  margin: 0 20px 0 20px;
+  float: $fl;
+  background: url('../svgs/delivery.svg') no-repeat center;
+}
+
+.plan {
+  width: 70%;
+  height: 100px;
+  margin: 0 auto;
+  padding: 50px 0 0 0;
+  color: $color2;
+
+    &:hover .line {
+    width: 400px;
+    transition: $transition;
+  }
+}
+
+.plan-image {
+  width: 90px;
+  height: 80px;
+  margin: 0 20px 0 20px;
+  float: $fl;
+  background: url('../svgs/strategy.svg') no-repeat top left;
+}
+//here is where the about page code starts --- it will be broken into sections. pay close attention.
+
+.shadow-wrapper {
+  height: 1420px;
+  box-shadow: $box-shadow;
+
+}
+
+.part1 {
+  width: 100%;
+  height: (.25 * 100) * 1%;
+  padding-top: 5px;
+  background-color: #FFF;
+  color: $color2;
+
+  &:hover p {
+    transition: $transition;
+    text-shadow: $text-shadow;
+ }
+
+ &:hover h2 {
+   transition: $transition;
+   text-shadow: $text-shadow;
+ }
+}
+
+.education {
+  width: 98%;
+  height: 84%;
+  margin: 0 auto;
+  padding: 50px 0 0 0;
+  transition: $transition;
+  line-height: 1.625rem;
+  text-align: center;
+
+  &:hover {
+    transition: $transition;
+    box-shadow: $box-shadow;
+ }
+}
+
+.roberts-logo {
+  width: 350px;
+  height: 280px;
+  float: $fl;
+  background: url('../svgs/roberts.svg') no-repeat top center;
+}
+
+.part2 {
+  width: 100%;
+  height: (.25 * 100) * 1%;
+  padding: 5px 0 0 0;
+  background-color: $color4;
+  color: $color2;
+  overflow-y: hidden;
+
+  &:hover p {
+    transition: $transition;
+    text-shadow: $text-shadow;
+ }
+
+ &:hover h2 {
+   transition: $transition;
+   text-shadow: $text-shadow;
+ }
+}
+
+.career {
+  width: 98%;
+  height: 84%;
+  margin: 0 auto;
+  padding: 50px 0 0 0;
+  transition: $transition;
+  line-height: 1.625rem;
+  text-align: center;
+
+  &:hover {
+    transition: $transition;
+    box-shadow: $box-shadow;
+ }
+}
+
+.career-logo {
+  width: 350px;
+  height: 300px;
+  float: right;
+  background: url('../svgs/school.svg') no-repeat bottom 10px center;
+}
+
+.part3 {
+  width: 100%;
+  height: (.25 * 100) * 1%;
+  padding: 5px 0 0 0;
+  background-color: #FFF;
+  color: $color2;
+
+  &:hover p {
+    transition: $transition;
+    text-shadow: $text-shadow;
+ }
+
+ &:hover h2 {
+   transition: $transition;
+   text-shadow: $text-shadow;
+ }
+
+}
+
+.opportunities {
+  width: 98%;
+  height: 84%;
+  margin: 0 auto;
+  padding: 50px 0 0 0;
+  transition: $transition;
+  line-height: 1.625rem;
+  text-align: center;
+
+  &:hover {
+    transition: $transition;
+    box-shadow: $box-shadow;
+ }
+}
+
+.languages-logo {
+  width: 350px;
+  height: 300px;
+  padding: 0 10px 0 0;
+  float: $fl;
+  background: url('../svgs/languages.svg') no-repeat bottom 10px center;
+}
+
+.part4 {
+  width: 100%;
+  height: (.25 * 96) * 1%;
+  padding: 5px 0 0 0;
+  background-color: $color4;
+  color: $color2;
+  overflow-y: hidden;
+
+  &:hover p {
+    transition: $transition;
+    text-shadow: $text-shadow;
+ }
+
+ &:hover h2 {
+   transition: $transition;
+   text-shadow: $text-shadow;
+ }
+}
+
+.websites {
+  width: 98%;
+  height: 82%;
+  margin: 0 auto;
+  padding: 50px 0 0 0;
+  transition: $transition;
+  line-height: 1.625rem;
+  text-align: center;
+
+  &:hover {
+    transition: $transition;
+    box-shadow: $box-shadow;
+ }
+}
+
+.websites-logo {
+  width: 400px;
+  height: 300px;
+  float: $fl;
+  background: url('../svgs/screen.svg') no-repeat top center;
+}
+
+// contact page styles are written here
+
+.left-side {
+  width: (.5 * 100) * 1%;
+  height: 100%;
+  float: $fl;
+  background-color: $color4;
+  color: $color2;
+  text-align: center;
+
+  &:hover h3 {
+    transition: $transition;
+    text-shadow: $text-shadow;
+ }
+
+ &:hover h1 {
+   transition: $transition;
+   text-shadow: $text-shadow;
+ }
+}
+
+
+
+.party-computer {
+  width: 500px;
+  height: 500px;
+  background: url('../svgs/partycomputer.svg') no-repeat center center;
+
+}
+
+.right-side {
+  width: (.5 * 99) * 1%;
+  height: 100%;
+  float: $fl;
+  border-width: 5px;
+  border-left-color: $color2;
+  border-right: $none;
+  border-top: $none;
+  border-bottom: $none;
+  border-style: $border-style;
+  color: $color2;
+  text-align: center;
+
+  &:hover h3 {
+    transition: $transition;
+    text-shadow: $text-shadow;
+ }
+
+ &:hover h1 {
+   transition: $transition;
+   text-shadow: $text-shadow;
+ }
+}
+
+.party-phone {
+  width: 500px;
+  height: 500px;
+  background: url('../svgs/partyphone.svg') no-repeat center center;
+}
+
+.contact-wrap {
+  width: 100%;
+  height: 700px;
+  margin: 0 auto;
+  background-color: $color4;
+  border-width: 5px;
+  border-bottom-color: $color2;
+  border-right: $none;
+  border-top: $none;
+  border-left: $none;
+  border-style: $border-style;
+}
+
+.thanks-box {
+  height: 200px;
+  width: 800px;
+  margin: 200px auto;
+  background-color: $color2;
+  box-shadow: $box-shadow;
+  color: $color1;
 }
