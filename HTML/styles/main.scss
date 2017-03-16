@@ -56,7 +56,7 @@ h4 {
 }
 
 p {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .site-wrap {
@@ -69,13 +69,12 @@ p {
 
 .nav-background {
   width: 100%;
-  background-color: purple;
+  background-color: $color2;
 }
 
 .nav-text-styles {
   width: 50%;
   margin: 0 auto;
-  background-color: orange;
   text-align: center;
 }
 

@@ -80,7 +80,7 @@ h4 {
   font-size: 1.5rem; }
 
 p {
-  font-size: 1.25rem; }
+  font-size: 1.5rem; }
 
 .site-wrap {
   width: 70%;
@@ -91,12 +91,11 @@ p {
 
 .nav-background {
   width: 100%;
-  background-color: purple; }
+  background-color: #A22E2E; }
 
 .nav-text-styles {
   width: 50%;
   margin: 0 auto;
-  background-color: orange;
   text-align: center; }
 
 .top-main {
