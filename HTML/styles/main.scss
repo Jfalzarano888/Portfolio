@@ -14,7 +14,7 @@ $border-style: solid;
 $none: 0;
 
 a {
-  color: #FFF;
+  color: $color1;
   text-decoration: none;
 }
 
@@ -61,17 +61,19 @@ p {
 .background-box {
   width: 100%;
   height: 8%;
-  margin: 0 auto;
+  padding: 2px 0 0 0;
   background-color: $color2;
   box-shadow: $box-shadow;
 }
 
 .nav-menu-box {
-  width: 500px;
+  width: 50%;
   height: 50px;
-  margin: 0 auto;
+  margin: 5px auto;
   padding: 30px 0 0 0;
-  color: #FFF;
+  border: 2px solid $color1;
+  border-radius: 50px;
+  color: $color1;
 }
 
 .nav-text-styles {
@@ -223,7 +225,7 @@ p {
 
 .call {
   width: 70%;
-  height: 100px;
+  height: 20%;
   margin: 0 auto;
   padding: 50px 0 0 0;
   color: $color2;
@@ -246,7 +248,7 @@ p {
 
 .delivered {
   width: 70%;
-  height: 100px;
+  height: 20%;
   margin: 0 auto;
   padding: 50px 0 0 0;
   color: $color2;
@@ -268,7 +270,7 @@ p {
 
 .plan {
   width: 70%;
-  height: 100px;
+  height: 20%;
   margin: 0 auto;
   padding: 50px 0 0 0;
   color: $color2;
@@ -312,7 +314,7 @@ p {
 }
 
 .education {
-  width: 98%;
+  width: 99%;
   height: 84%;
   margin: 0 auto;
   padding: 50px 0 0 0;
@@ -353,7 +355,7 @@ p {
 }
 
 .career {
-  width: 98%;
+  width: 99%;
   height: 84%;
   margin: 0 auto;
   padding: 50px 0 0 0;
@@ -394,7 +396,7 @@ p {
 }
 
 .opportunities {
-  width: 98%;
+  width: 99%;
   height: 84%;
   margin: 0 auto;
   padding: 50px 0 0 0;
@@ -436,7 +438,7 @@ p {
 }
 
 .websites {
-  width: 98%;
+  width: 99%;
   height: 82%;
   margin: 0 auto;
   padding: 50px 0 0 0;
@@ -460,12 +462,17 @@ p {
 // contact page styles are written here
 
 .left-side {
-  width: 49%;
+  width: 50%;
   height: 100%;
   float: $fl;
   background-color: $color4;
   color: $color2;
   text-align: center;
+
+  &:hover {
+  transition: $transition;
+  box-shadow: $box-shadow;
+  }
 
   &:hover h3 {
     transition: $transition;
@@ -488,7 +495,7 @@ p {
 }
 
 .right-side {
-  width: 49%;
+  width: 49.5%;
   height: 100%;
   float: $fl;
   border-width: 2px;
@@ -499,6 +506,11 @@ p {
   border-style: $border-style;
   color: $color2;
   text-align: center;
+
+  &:hover {
+  transition: $transition;
+  box-shadow: $box-shadow;
+  }
 
   &:hover h3 {
     transition: $transition;
