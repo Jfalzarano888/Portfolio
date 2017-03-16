@@ -53,7 +53,7 @@ html,
 body {
   position: relative;
   width: 1024px;
-  height: 100%;
+  height: 1300px;
   margin: 0 auto;
   background-color: #F1F1F1;
   font-family: Helvetica, "Times New Roman", sans-serif;
@@ -84,7 +84,7 @@ p {
 
 .background-box {
   width: 100%;
-  height: 100px;
+  height: 8%;
   margin: 0 auto;
   background-color: #A22E2E;
   box-shadow: 0 0 10px 5px #888; }
@@ -112,37 +112,38 @@ p {
     border-color: #D8D8D8 #A22E2E #D8D8D8 #A22E2E;
     color: #D8D8D8; }
 
-.wrapper {
+.top-main-wrapper {
   position: relative;
-  height: 450px;
-  padding: 30px 12px 40px 12px;
+  height: 95%;
   color: #A22E2E;
   text-align: center; }
 
 .top-main {
   position: relative;
   width: 100%;
-  height: 43%;
+  height: 45%;
   border-width: 4px;
-  border-bottom-style: solid;
-  border-bottom-color: #A22E2E;
   background-color: #D8D8D8;
   box-shadow: 0 0 10px 5px #888;
   z-index: 2; }
 
 .text-shrink {
-  width: 310px;
+  width: 90%;
   margin: 0 auto;
   line-height: 1.625rem; }
 
 .feature1 {
-  width: 333.33333px;
-  height: 514px;
+  width: 33.33333%;
+  height: 100%;
+  padding: 30px 0 0 0;
   float: left;
-  transition: linear 0.25s; }
+  transition: linear 0.25s;
+  border-width: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: #A22E2E; }
   .feature1:hover {
-    box-shadow: 0 0 10px 5px #888;
-    transition: linear 0.25s; }
+    transition: linear 0.25s;
+    box-shadow: 0 0 10px 5px #888; }
 
 .feature1-image {
   width: 180px;
@@ -151,10 +152,14 @@ p {
   background: url("../svgs/pencil.svg") no-repeat center; }
 
 .feature2 {
-  width: 333.33333px;
-  height: 480px;
+  width: 33.33333%;
+  height: 100%;
+  padding: 30px 0 0 0;
   float: left;
-  transition: linear 0.25s; }
+  transition: linear 0.25s;
+  border-width: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: #A22E2E; }
   .feature2:hover {
     transition: linear 0.25s;
     box-shadow: 0 0 10px 5px #888; }
@@ -166,10 +171,14 @@ p {
   background: url("../svgs/networking.svg") no-repeat center; }
 
 .feature3 {
-  width: 333.33333px;
-  height: 514px;
+  width: 33.33333%;
+  height: 100%;
+  padding: 30px 0 0 0;
   float: left;
-  transition: linear 0.25s; }
+  transition: linear 0.25s;
+  border-width: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: #A22E2E; }
   .feature3:hover {
     transition: linear 0.25s;
     box-shadow: 0 0 10px 5px #888; }
@@ -180,25 +189,12 @@ p {
   margin: 20px auto;
   background: url("../svgs/laptop.svg") no-repeat center; }
 
-.banner-box {
-  position: relative;
-  width: 320px;
-  height: 80px;
-  margin: 0 auto;
-  background-color: #A22E2E;
-  color: #FFF;
-  line-height: 40px;
-  text-align: center;
-  box-shadow: 0 0 10px 5px #888; }
-
 .bottom-main {
-  width: 1024px;
-  height: 100%;
-  max-height: 600px;
+  width: 100%;
+  height: 50%;
   padding: 100px 0 0 0;
   background-color: #F1F1F1;
-  box-shadow: 0 0 10px 5px #888;
-  z-index: 1; }
+  box-shadow: 0 0 10px 5px #888; }
 
 .line {
   width: 200px;
@@ -265,7 +261,7 @@ p {
 .part1 {
   width: 100%;
   height: 25%;
-  padding-top: 5px;
+  padding: 5px 0 0 0;
   background-color: #FFF;
   color: #A22E2E; }
   .part1:hover p {
@@ -390,7 +386,7 @@ p {
   background: url("../svgs/screen.svg") no-repeat top center; }
 
 .left-side {
-  width: 50%;
+  width: 49%;
   height: 100%;
   float: left;
   background-color: #D8D8D8;
@@ -409,10 +405,10 @@ p {
   background: url("../svgs/partycomputer.svg") no-repeat center center; }
 
 .right-side {
-  width: 49.5%;
+  width: 49%;
   height: 100%;
   float: left;
-  border-width: 5px;
+  border-width: 2px;
   border-left-color: #A22E2E;
   border-right: 0;
   border-top: 0;
@@ -434,7 +430,7 @@ p {
 
 .contact-wrap {
   width: 100%;
-  height: 700px;
+  height: 50%;
   margin: 0 auto;
   background-color: #D8D8D8;
   border-width: 5px;
@@ -445,8 +441,8 @@ p {
   border-style: solid; }
 
 .thanks-box {
-  height: 200px;
-  width: 800px;
+  width: 60%;
+  height: 10%;
   margin: 200px auto;
   background-color: #A22E2E;
   box-shadow: 0 0 10px 5px #888;

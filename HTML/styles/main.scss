@@ -22,7 +22,7 @@ html,
 body {
 position: relative;
 width: 1024px;
-height: 100%;
+height: 1300px;
 margin: 0 auto;
 background-color: $color1;
 font-family: Helvetica, "Times New Roman", sans-serif;
@@ -60,7 +60,7 @@ p {
 
 .background-box {
   width: 100%;
-  height: 100px;
+  height: 8%;
   margin: 0 auto;
   background-color: $color2;
   box-shadow: $box-shadow;
@@ -93,10 +93,9 @@ p {
   }
 }
 
-.wrapper {
+.top-main-wrapper {
   position: relative;
-  height: 450px;
-  padding: 30px 12px 40px 12px;
+  height: 95%;
   color: $color2;
   text-align: center;
 }
@@ -104,30 +103,33 @@ p {
 .top-main {
   position: relative;
   width: 100%;
-  height: 43%;
+  height: 45%;
   border-width: 4px;
-  border-bottom-style: $border-style;
-  border-bottom-color: $color2;
   background-color: $color4;
   box-shadow: $box-shadow;
   z-index: 2;
 }
 
 .text-shrink {
-  width: 310px;
+  width: 90%;
   margin: 0 auto;
   line-height: 1.625rem;
 }
 
 .feature1 {
-  width: (1000 / 3) * 1px;
-  height: 514px;
+  width: (100 / 3) * 1%;
+  height: 100%;
+  padding: 30px 0 0 0;
   float: $fl;
   transition: $transition;
+  border-width: 4px;
+  border-bottom-style: $border-style;
+  border-bottom-color: $color2;
 
-   &:hover{
-     box-shadow: $box-shadow;
+   &:hover {
      transition: $transition;
+     box-shadow: $box-shadow;
+
   }
 }
 
@@ -139,10 +141,14 @@ p {
 }
 
 .feature2 {
-  width: (1000 / 3) * 1px;
-  height: 480px;
+  width: (100 / 3) * 1%;
+  height: 100%;
+  padding: 30px 0 0 0;
   float: $fl;
   transition: $transition;
+  border-width: 4px;
+  border-bottom-style: $border-style;
+  border-bottom-color: $color2;
 
     &:hover {
     transition: $transition;
@@ -158,10 +164,14 @@ p {
 }
 
 .feature3 {
-  width: (1000 / 3) * 1px;
-  height: 514px;
+  width: (100 / 3) * 1%;
+  height: 100%;
+  padding: 30px 0 0 0;
   float: $fl;
   transition: $transition;
+  border-width: 4px;
+  border-bottom-style: $border-style;
+  border-bottom-color: $color2;
 
   &:hover {
   transition: $transition;
@@ -176,28 +186,29 @@ p {
   background: url('../svgs/laptop.svg') no-repeat center;
 }
 
-.banner-box {
-  position: relative;
-  width: 320px;
-  height: 80px;
-  margin: 0 auto;
-  background-color: $color2;
-  color: #FFF;
-  line-height: 40px;
-  text-align: center;
-  box-shadow: $box-shadow;
-}
+
+// .banner-box {
+  //position: relative;
+  //width: 320px;
+  //height: 80px;
+  //margin: 0 auto;
+  //background-color: $color2;
+  //color: #FFF;
+  //line-height: 40px;
+  //text-align: center;
+  //box-shadow: $box-shadow;
+//}
+
+
 
 //page split here
 
 .bottom-main {
-  width: 1024px;
-  height: 100%;
-  max-height: 600px;
+  width: 100%;
+  height: 50%;
   padding: 100px 0 0 0;
   background-color: #F1F1F1;
   box-shadow: $box-shadow;
-  z-index: 1;
 }
 
 
@@ -280,13 +291,12 @@ p {
 .shadow-wrapper {
   height: 1420px;
   box-shadow: $box-shadow;
-
 }
 
 .part1 {
   width: 100%;
   height: (.25 * 100) * 1%;
-  padding-top: 5px;
+  padding: 5px 0 0 0;
   background-color: #FFF;
   color: $color2;
 
@@ -450,7 +460,7 @@ p {
 // contact page styles are written here
 
 .left-side {
-  width: (.5 * 100) * 1%;
+  width: 49%;
   height: 100%;
   float: $fl;
   background-color: $color4;
@@ -478,10 +488,10 @@ p {
 }
 
 .right-side {
-  width: (.5 * 99) * 1%;
+  width: 49%;
   height: 100%;
   float: $fl;
-  border-width: 5px;
+  border-width: 2px;
   border-left-color: $color2;
   border-right: $none;
   border-top: $none;
@@ -509,7 +519,7 @@ p {
 
 .contact-wrap {
   width: 100%;
-  height: 700px;
+  height: 50%;
   margin: 0 auto;
   background-color: $color4;
   border-width: 5px;
@@ -521,8 +531,8 @@ p {
 }
 
 .thanks-box {
-  height: 200px;
-  width: 800px;
+  width: 60%;
+  height: 10%;
   margin: 200px auto;
   background-color: $color2;
   box-shadow: $box-shadow;
