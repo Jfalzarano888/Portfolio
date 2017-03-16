@@ -52,19 +52,17 @@ a {
 html,
 body {
   position: relative;
-  width: 1024px;
-  height: 1300px;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
-  background-color: #F1F1F1;
   font-family: Helvetica, "Times New Roman", sans-serif;
   font-size: 16px; }
 
 h1 {
-  font-size: 2rem;
-  text-align: center;
-  padding: 20px 0 0 0;
+  transition: linear 0.25s;
   color: #A22E2E;
-  transition: linear 0.25s; }
+  font-size: 2rem;
+  text-align: center; }
 
 h2 {
   margin: 20px auto;
@@ -73,8 +71,10 @@ h2 {
   font-weight: 400; }
 
 h3 {
+  margin: 2%;
+  display: inline;
   transition: linear 0.25s;
-  font-size: 2rem; }
+  font-size: 2.75rem; }
 
 h4 {
   font-size: 1.5rem; }
@@ -82,373 +82,73 @@ h4 {
 p {
   font-size: 1.25rem; }
 
-.background-box {
-  width: 100%;
-  height: 8%;
-  padding: 2px 0 0 0;
-  background-color: #A22E2E;
+.site-wrap {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: green;
   box-shadow: 0 0 10px 5px #888; }
 
-.nav-menu-box {
-  width: 50%;
-  height: 50px;
-  margin: 1px auto;
-  padding: 20px 0 0 0;
-  border: 2px solid #F1F1F1;
-  border-radius: 50px;
-  color: #F1F1F1; }
+.nav-background {
+  width: 100%;
+  background-color: purple; }
 
 .nav-text-styles {
-  width: 160px;
-  float: left;
-  font-size: 1.60rem;
-  font-weight: 300;
-  text-align: center;
-  transition: linear 0.25s; }
-  .nav-text-styles:hover a {
-    transition: linear 0.25s;
-    border-width: 1px;
-    border-style: solid;
-    border-right-width: 0;
-    border-left-width: 0;
-    border-color: #D8D8D8 #A22E2E #D8D8D8 #A22E2E;
-    color: #D8D8D8; }
-
-.top-main-wrapper {
-  position: relative;
-  height: 95%;
-  color: #A22E2E;
+  width: 50%;
+  margin: 0 auto;
+  background-color: orange;
   text-align: center; }
 
 .top-main {
+  width: 100%;
+  height: 70%; }
+
+.top-main-wrapper {
   position: relative;
   width: 100%;
-  height: 45%;
+  height: 100%;
+  margin: 0 auto;
   border-width: 4px;
+  border-style: solid;
+  border-bottom-color: #A22E2E;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
   background-color: #D8D8D8;
-  box-shadow: 0 0 10px 5px #888;
+  line-height: 1.625rem;
+  text-align: center;
   z-index: 2; }
 
 .feature1 {
   width: 33.33333%;
   height: 100%;
-  padding: 30px 0 0 0;
   float: left;
-  transition: linear 0.25s;
-  border-width: 4px;
-  border-bottom-style: solid;
-  border-bottom-color: #A22E2E; }
+  color: #A22E2E; }
   .feature1:hover {
     transition: linear 0.25s;
     box-shadow: 0 0 10px 5px #888; }
 
-.feature1-image {
-  width: 180px;
-  height: 160px;
-  margin: 20px auto;
-  background: url("../svgs/pencil.svg") no-repeat center; }
-
 .feature2 {
   width: 33.33333%;
   height: 100%;
-  padding: 30px 0 0 0;
   float: left;
-  transition: linear 0.25s;
-  border-width: 4px;
-  border-bottom-style: solid;
-  border-bottom-color: #A22E2E; }
+  color: #A22E2E; }
   .feature2:hover {
     transition: linear 0.25s;
     box-shadow: 0 0 10px 5px #888; }
 
-.feature2-image {
-  width: 180px;
-  height: 160px;
-  margin: 20px auto;
-  background: url("../svgs/networking.svg") no-repeat center; }
-
 .feature3 {
   width: 33.33333%;
   height: 100%;
-  padding: 30px 0 0 0;
   float: left;
-  transition: linear 0.25s;
-  border-width: 4px;
-  border-bottom-style: solid;
-  border-bottom-color: #A22E2E; }
+  color: #A22E2E; }
   .feature3:hover {
     transition: linear 0.25s;
     box-shadow: 0 0 10px 5px #888; }
 
-.feature3-image {
-  width: 180px;
-  height: 160px;
-  margin: 20px auto;
-  background: url("../svgs/laptop.svg") no-repeat center; }
-
 .bottom-main {
   width: 100%;
-  height: 50%;
-  padding: 100px 0 0 0;
-  background-color: #F1F1F1;
-  box-shadow: 0 0 10px 5px #888; }
-
-.line {
-  width: 200px;
-  height: 2px;
-  margin: 20px auto;
-  transition: linear 0.25s;
-  background-color: #A22E2E; }
-
-.call {
-  width: 70%;
-  height: 20%;
-  margin: 0 auto;
-  padding: 50px 0 0 0;
-  color: #A22E2E; }
-  .call:hover .line {
-    width: 400px;
-    transition: linear 0.25s; }
-
-.phone-image {
-  width: 80px;
-  height: 80px;
-  margin: 0 20px 0 20px;
-  float: left;
-  background: url("../svgs/phone2small.svg") no-repeat top left 10px; }
-
-.delivered {
-  width: 70%;
-  height: 20%;
-  margin: 0 auto;
-  padding: 50px 0 0 0;
-  color: #A22E2E; }
-  .delivered:hover .line {
-    width: 400px;
-    transition: linear 0.25s; }
-
-.delivered-image {
-  width: 80px;
-  height: 80px;
-  margin: 0 20px 0 20px;
-  float: left;
-  background: url("../svgs/delivery.svg") no-repeat center; }
-
-.plan {
-  width: 70%;
-  height: 20%;
-  margin: 0 auto;
-  padding: 50px 0 0 0;
-  color: #A22E2E; }
-  .plan:hover .line {
-    width: 400px;
-    transition: linear 0.25s; }
-
-.plan-image {
-  width: 90px;
-  height: 80px;
-  margin: 0 20px 0 20px;
-  float: left;
-  background: url("../svgs/strategy.svg") no-repeat top left; }
-
-.shadow-wrapper {
-  height: 1420px;
-  box-shadow: 0 0 10px 5px #888; }
-
-.part1 {
-  width: 100%;
-  height: 25%;
-  padding: 5px 0 0 0;
-  background-color: #FFF;
-  color: #A22E2E; }
-  .part1:hover p {
-    transition: linear 0.25s;
-    text-shadow: 10px 10px 40px #999; }
-  .part1:hover h2 {
-    transition: linear 0.25s;
-    text-shadow: 10px 10px 40px #999; }
-
-.education {
-  width: 99%;
-  height: 84%;
-  margin: 0 auto;
-  padding: 50px 0 0 0;
-  transition: linear 0.25s;
-  line-height: 1.625rem;
-  text-align: center; }
-  .education:hover {
-    transition: linear 0.25s;
-    box-shadow: 0 0 10px 5px #888; }
-
-.roberts-logo {
-  width: 350px;
-  height: 280px;
-  float: left;
-  background: url("../svgs/roberts.svg") no-repeat top center; }
-
-.part2 {
-  width: 100%;
-  height: 25%;
-  padding: 5px 0 0 0;
-  background-color: #D8D8D8;
-  color: #A22E2E;
-  overflow-y: hidden; }
-  .part2:hover p {
-    transition: linear 0.25s;
-    text-shadow: 10px 10px 40px #999; }
-  .part2:hover h2 {
-    transition: linear 0.25s;
-    text-shadow: 10px 10px 40px #999; }
-
-.career {
-  width: 99%;
-  height: 84%;
-  margin: 0 auto;
-  padding: 50px 0 0 0;
-  transition: linear 0.25s;
-  line-height: 1.625rem;
-  text-align: center; }
-  .career:hover {
-    transition: linear 0.25s;
-    box-shadow: 0 0 10px 5px #888; }
-
-.career-logo {
-  width: 350px;
-  height: 300px;
-  float: right;
-  background: url("../svgs/school.svg") no-repeat bottom 10px center; }
-
-.part3 {
-  width: 100%;
-  height: 25%;
-  padding: 5px 0 0 0;
-  background-color: #FFF;
-  color: #A22E2E; }
-  .part3:hover p {
-    transition: linear 0.25s;
-    text-shadow: 10px 10px 40px #999; }
-  .part3:hover h2 {
-    transition: linear 0.25s;
-    text-shadow: 10px 10px 40px #999; }
-
-.opportunities {
-  width: 99%;
-  height: 84%;
-  margin: 0 auto;
-  padding: 50px 0 0 0;
-  transition: linear 0.25s;
-  line-height: 1.625rem;
-  text-align: center; }
-  .opportunities:hover {
-    transition: linear 0.25s;
-    box-shadow: 0 0 10px 5px #888; }
-
-.languages-logo {
-  width: 350px;
-  height: 300px;
-  padding: 0 10px 0 0;
-  float: left;
-  background: url("../svgs/languages.svg") no-repeat bottom 10px center; }
-
-.part4 {
-  width: 100%;
-  height: 24%;
-  padding: 5px 0 0 0;
-  background-color: #D8D8D8;
-  color: #A22E2E;
-  overflow-y: hidden; }
-  .part4:hover p {
-    transition: linear 0.25s;
-    text-shadow: 10px 10px 40px #999; }
-  .part4:hover h2 {
-    transition: linear 0.25s;
-    text-shadow: 10px 10px 40px #999; }
-
-.websites {
-  width: 99%;
-  height: 82%;
-  margin: 0 auto;
-  padding: 50px 0 0 0;
-  transition: linear 0.25s;
-  line-height: 1.625rem;
-  text-align: center; }
-  .websites:hover {
-    transition: linear 0.25s;
-    box-shadow: 0 0 10px 5px #888; }
-
-.websites-logo {
-  width: 400px;
-  height: 300px;
-  float: left;
-  background: url("../svgs/screen.svg") no-repeat top center; }
-
-.left-side {
-  width: 50%;
-  height: 100%;
-  float: left;
-  background-color: #D8D8D8;
-  color: #A22E2E;
-  text-align: center; }
-  .left-side:hover {
-    transition: linear 0.25s;
-    box-shadow: 0 0 10px 5px #888; }
-  .left-side:hover h3 {
-    transition: linear 0.25s;
-    text-shadow: 10px 10px 40px #999; }
-  .left-side:hover h1 {
-    transition: linear 0.25s;
-    text-shadow: 10px 10px 40px #999; }
-
-.party-computer {
-  width: 500px;
-  height: 500px;
-  background: url("../svgs/partycomputer.svg") no-repeat center center; }
-
-.right-side {
-  width: 49.5%;
-  height: 100%;
-  float: left;
-  border-width: 2px;
-  border-left-color: #A22E2E;
-  border-right: 0;
-  border-top: 0;
-  border-bottom: 0;
-  border-style: solid;
-  color: #A22E2E;
-  text-align: center; }
-  .right-side:hover {
-    transition: linear 0.25s;
-    box-shadow: 0 0 10px 5px #888; }
-  .right-side:hover h3 {
-    transition: linear 0.25s;
-    text-shadow: 10px 10px 40px #999; }
-  .right-side:hover h1 {
-    transition: linear 0.25s;
-    text-shadow: 10px 10px 40px #999; }
-
-.party-phone {
-  width: 500px;
-  height: 500px;
-  background: url("../svgs/partyphone.svg") no-repeat center center; }
-
-.contact-wrap {
-  width: 100%;
-  height: 50%;
-  margin: 0 auto;
-  background-color: #D8D8D8;
-  border-width: 5px;
-  border-bottom-color: #A22E2E;
-  border-right: 0;
-  border-top: 0;
-  border-left: 0;
-  border-style: solid; }
-
-.thanks-box {
-  width: 60%;
-  height: 10%;
-  margin: 200px auto;
-  background-color: #A22E2E;
-  box-shadow: 0 0 10px 5px #888;
-  color: #F1F1F1; }
+  height: 60%;
+  background-color: yellow; }
 
 /*# sourceMappingURL=main.css.map */
