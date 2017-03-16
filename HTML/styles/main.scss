@@ -69,8 +69,8 @@ p {
 .nav-menu-box {
   width: 50%;
   height: 50px;
-  margin: 5px auto;
-  padding: 30px 0 0 0;
+  margin: 1px auto;
+  padding: 20px 0 0 0;
   border: 2px solid $color1;
   border-radius: 50px;
   color: $color1;
@@ -112,11 +112,6 @@ p {
   z-index: 2;
 }
 
-.text-shrink {
-  width: 90%;
-  margin: 0 auto;
-  line-height: 1.625rem;
-}
 
 .feature1 {
   width: (100 / 3) * 1%;
