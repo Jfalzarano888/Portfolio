@@ -99,7 +99,7 @@ p {
 .nav-text-styles {
   width: 160px;
   float: left;
-  font-size: 1.60rem;
+  font-size: 1.80rem;
   font-weight: 300;
   text-align: center;
   transition: linear 0.25s; }
@@ -412,7 +412,7 @@ p {
   width: 49.5%;
   height: 100%;
   float: left;
-  border-width: 5px;
+  border-width: 2px;
   border-left-color: #A22E2E;
   border-right: 0;
   border-top: 0;
