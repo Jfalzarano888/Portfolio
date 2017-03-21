@@ -1,5 +1,8 @@
 @import 'reset';
 
+
+//common styles throughout the websites.
+
 $color1: #F1F1F1;
 $color2: #A22E2E;
 $color3: #9B9B9B;
@@ -7,46 +10,61 @@ $color4: #D8D8D8;
 $inline: inline-block;
 $fl: left;
 $transition: linear .25s;
-$margin: 20px auto;
 $text-shadow: 10px 10px 40px #999;
 $box-shadow: 0 0 10px 5px #888;
 $border-style: solid;
 $none: 0;
+
+// main font and line height sizes
+
+$font-size: 16px;
+$line-height: 24px;
+
+//using this for padding left and right only
+
+$pad: 16px; //
+$pad-half: $pad / 2;
+$pad-and-half: $pad * 1.5;
+$pad-double: $pad * 2;
+$pad-triple: $pad * 3;
+
+//using this for spacing vertically. Use this variable for margins only!
+
+$space: 24px;
+$space-half: $space / 2;
+$space-and-half: $space * 1.5;
+$space-double: $space * 2;
+$space-triple: $space * 3;
+
+
+html,
+body {
+position: relative;
+width: 100%;
+height: 100%;
+margin: 0 auto;
+font-family: Helvetica, "Times New Roman", sans-serif;
+font-size: $font-size;
+}
 
 a {
   color: $color1;
   text-decoration: none;
 }
 
-html,
-body {
-position: relative;
-width: 100%; //1024  height -- //1300
-height: 100%;
-margin: 0 auto;
-font-family: Helvetica, "Times New Roman", sans-serif;
-font-size: 16px;
-}
-
 h1 {
-  transition: $transition;
-  color: $color2;
   font-size: 2rem;
   text-align: center;
 }
 
 h2 {
-  margin: $margin;
-  transition: $transition;
-  font-size: 2.25rem;
+  font-size: 2.75rem;
   font-weight: 400;
 
 }
 
 h3 {
-  margin: 2%;
   display: inline;
-  transition: $transition;
   font-size: 2.75rem;
 
 }
@@ -60,82 +78,122 @@ p {
 }
 
 .site-wrap {
-  width: 70%;
-  height: 100%;
+  width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
-  box-shadow: $box-shadow;
 }
 
-.nav-background {
-  width: 100%;
+.nav-banner {
   background-color: $color2;
+  width: 100%;
+  min-height: 80px;
 }
 
-.nav-text-styles {
-  width: 50%;
+.menu-item {
+  width: 40%;
   margin: 0 auto;
+}
+
+.nav-text {
+  width: 33.333%;
+  margin: $space-half 0;
+  float: left;
   text-align: center;
 }
 
 .top-main {
-  width: 100%;
-  height: 80%;
-}
-
-.top-main-wrapper {
   position: relative;
   width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  background-color: $color4;
-  line-height: 1.625rem;
-  text-align: center;
-  z-index: 2;
+  padding: $pad 0;
+  box-shadow:0 0px 30px #888;
+
 }
 
-.paragraph-box {
+.feature-row {
+  width: 98%;
+  background: $color4;
+  margin: 0 auto;
+  color: $color2;
+  overflow: hidden;
+  transition: $transition;
+
+  &:hover {
+    box-shadow: $box-shadow;
+    transition: $transition;
+    border: 2px solid $color2;
+  }
+}
+
+.feature {
+  width: 33.333%;
+  height: 100%;
+  margin: $space 0;
+  float: left;
+  text-align: center;
+}
+
+.subtext {
   width: 80%;
   margin: 0 auto;
+  padding: $pad-and-half 0 0 0;
+  line-height: $line-height;
 }
 
+.bottom {
+  position: absolute;
+  width: 80%;
+  max-width: 1200px;
+  box-shadow:0 10px 30px #888;
 
-.feature1 {
-  width: (100 / 3) * 1%;
-  height: 100%;
-  float: left;
+}
+
+.additional-features {
+  width: 98%;
+  margin: 0 auto;
   color: $color2;
+}
 
-  &:hover {
+.bottom-box {
+  position: relative;
+  width: 80%;
+  margin: $space-and-half auto;
+  overflow: hidden;
+
+  &:hover .line {
+    width: 500px;
     transition: $transition;
-    box-shadow: $box-shadow;
   }
 }
 
-.feature2 {
-  width: (100 / 3) * 1%;
-  height: 100%;
-  float: left;
-  color: $color2;
-
-  &:hover {
-    transition: $transition;
-    box-shadow: $box-shadow;
-  }
+.img {
+  width: 20%;
+  height: 100px;
+  padding: 0 $pad-and-half 0 0;
+  float: $fl;
 }
 
-.feature3 {
-  width: (100 / 3) * 1%;
-  height: 100%;
-  float: left;
-  color: $color2;
-
-  &:hover {
-    transition: $transition;
-    box-shadow: $box-shadow;
-  }
-}
-
-.bottom-main {
+.phone-image {
   width: 100%;
-  height: 60%;
+  height: 100%;
+  background: url('../svgs/phone.svg') no-repeat center;
+}
+
+.delivered-image {
+  width: 100%;
+  height: 100%;
+  background: url('../svgs/man.svg') no-repeat center center;
+}
+
+.plan-image {
+  width: 100%;
+  height: 100%;
+  background: url('../svgs/strategy.svg') no-repeat center center;
+}
+
+.line {
+  width: 200px;
+  height: 2px;
+  margin: $space-half auto;
+  background-color: $color2;
+  transition: $transition;
 }
