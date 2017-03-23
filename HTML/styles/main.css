@@ -64,11 +64,12 @@ h1 {
 
 h2 {
   font-size: 2.75rem;
-  font-weight: 400; }
+  font-weight: 400;
+  text-align: center; }
 
 h3 {
   display: inline;
-  font-size: 2.75rem; }
+  font-size: 2.25rem; }
 
 h4 {
   font-size: 1.5rem; }
@@ -77,9 +78,11 @@ p {
   font-size: 1.25rem; }
 
 .site-wrap {
+  position: relative;
   width: 80%;
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  box-shadow: 0 0px 30px #888; }
 
 .nav-banner {
   background-color: #A22E2E;
@@ -97,7 +100,6 @@ p {
   text-align: center; }
 
 .top-main {
-  position: relative;
   width: 100%;
   padding: 16px 0;
   box-shadow: 0 0px 30px #888; }
@@ -108,9 +110,10 @@ p {
   margin: 0 auto;
   color: #A22E2E;
   overflow: hidden;
-  transition: linear 0.25s; }
+  transition: linear 0.25s;
+  border: 2px solid #D8D8D8; }
   .feature-row:hover {
-    box-shadow: 0 0 10px 5px #888;
+    box-shadow: 0 0px 30px #888;
     transition: linear 0.25s;
     border: 2px solid #A22E2E; }
 
@@ -122,16 +125,14 @@ p {
   text-align: center; }
 
 .subtext {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   padding: 24px 0 0 0;
   line-height: 24px; }
 
 .bottom {
-  position: absolute;
-  width: 80%;
-  max-width: 1200px;
-  box-shadow: 0 10px 30px #888; }
+  width: 100%;
+  max-width: 1200px; }
 
 .additional-features {
   width: 98%;
@@ -139,19 +140,19 @@ p {
   color: #A22E2E; }
 
 .bottom-box {
-  position: relative;
   width: 80%;
   margin: 36px auto;
   overflow: hidden; }
   .bottom-box:hover .line {
-    width: 500px;
+    width: 80%;
     transition: linear 0.25s; }
 
 .img {
   width: 20%;
   height: 100px;
   padding: 0 24px 0 0;
-  float: left; }
+  float: left;
+  z-index: 2; }
 
 .phone-image {
   width: 100%;
@@ -174,5 +175,41 @@ p {
   margin: 12px auto;
   background-color: #A22E2E;
   transition: linear 0.25s; }
+
+.about {
+  width: 98%;
+  margin: 24px 12px;
+  border: 2px solid white;
+  overflow: hidden;
+  transition: linear 0.25s; }
+  .about:hover {
+    transition: linear 0.25s;
+    border: 2px solid #A22E2E;
+    box-shadow: 0 0px 30px #888; }
+
+.part1 {
+  border: 2px solid #D8D8D8;
+  background-color: #D8D8D8; }
+
+.part3 {
+  border: 2px solid #D8D8D8;
+  background-color: #D8D8D8; }
+
+.svg-wrap {
+  width: 20%;
+  padding: 0 24px 0 0;
+  float: left; }
+
+.image-float {
+  width: 20%;
+  height: 120px; }
+
+.about-text-wrap {
+  width: 75%;
+  float: left;
+  line-height: 24px; }
+
+.center-header {
+  margin: 24px auto; }
 
 /*# sourceMappingURL=main.css.map */

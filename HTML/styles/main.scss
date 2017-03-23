@@ -11,7 +11,7 @@ $inline: inline-block;
 $fl: left;
 $transition: linear .25s;
 $text-shadow: 10px 10px 40px #999;
-$box-shadow: 0 0 10px 5px #888;
+$box-shadow: 0 0px 30px #888;
 $border-style: solid;
 $none: 0;
 
@@ -60,12 +60,13 @@ h1 {
 h2 {
   font-size: 2.75rem;
   font-weight: 400;
+  text-align: center;
 
 }
 
 h3 {
   display: inline;
-  font-size: 2.75rem;
+  font-size: 2.25rem;
 
 }
 
@@ -78,15 +79,19 @@ p {
 }
 
 .site-wrap {
+  position: relative;
   width: 80%;
+
   max-width: 1200px;
   margin: 0 auto;
+  box-shadow: $box-shadow;
 }
 
 .nav-banner {
   background-color: $color2;
   width: 100%;
   min-height: 80px;
+
 }
 
 .menu-item {
@@ -102,7 +107,6 @@ p {
 }
 
 .top-main {
-  position: relative;
   width: 100%;
   padding: $pad 0;
   box-shadow:0 0px 30px #888;
@@ -116,6 +120,7 @@ p {
   color: $color2;
   overflow: hidden;
   transition: $transition;
+  border: 2px solid $color4;
 
   &:hover {
     box-shadow: $box-shadow;
@@ -130,20 +135,20 @@ p {
   margin: $space 0;
   float: left;
   text-align: center;
+
 }
 
 .subtext {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   padding: $pad-and-half 0 0 0;
   line-height: $line-height;
 }
 
 .bottom {
-  position: absolute;
-  width: 80%;
+  width: 100%;
   max-width: 1200px;
-  box-shadow:0 10px 30px #888;
+
 
 }
 
@@ -154,13 +159,12 @@ p {
 }
 
 .bottom-box {
-  position: relative;
   width: 80%;
   margin: $space-and-half auto;
   overflow: hidden;
 
   &:hover .line {
-    width: 500px;
+    width: 80%;
     transition: $transition;
   }
 }
@@ -170,6 +174,7 @@ p {
   height: 100px;
   padding: 0 $pad-and-half 0 0;
   float: $fl;
+  z-index: 2;
 }
 
 .phone-image {
@@ -196,4 +201,57 @@ p {
   margin: $space-half auto;
   background-color: $color2;
   transition: $transition;
+}
+
+
+
+//about page
+
+
+.about {
+  width: 98%;
+  margin: $space $space-half;
+  border: 2px solid white;
+  overflow: hidden;
+  transition: $transition;
+
+  &:hover {
+    transition: $transition;
+    border: 2px solid $color2;
+    box-shadow: $box-shadow;
+  }
+}
+
+.part1 {
+border: 2px solid $color4;
+background-color: $color4;
+
+}
+
+.part3 {
+  border: 2px solid $color4;
+  background-color: $color4;
+}
+
+
+
+.svg-wrap {
+  width: 20%;
+  padding: 0 $pad-and-half 0 0;
+  float: left;
+}
+
+.image-float {
+  width: 20%;
+  height: 120px;
+}
+
+.about-text-wrap {
+  width: 75%;
+  float: $fl;
+  line-height: $line-height;
+}
+
+.center-header {
+  margin: $space auto;
 }
