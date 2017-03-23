@@ -55,6 +55,7 @@ a {
 h1 {
   font-size: 2rem;
   text-align: center;
+  transition: $transition;
 }
 
 h2 {
@@ -66,7 +67,7 @@ h2 {
 
 h3 {
   display: inline;
-  font-size: 2.25rem;
+  font-size: 2rem;
 
 }
 
@@ -81,10 +82,11 @@ p {
 .site-wrap {
   position: relative;
   width: 80%;
-
   max-width: 1200px;
   margin: 0 auto;
+  background-color: $color1;
   box-shadow: $box-shadow;
+  overflow: hidden;
 }
 
 .nav-banner {
@@ -109,8 +111,6 @@ p {
 .top-main {
   width: 100%;
   padding: $pad 0;
-  box-shadow:0 0px 30px #888;
-
 }
 
 .feature-row {
@@ -145,12 +145,6 @@ p {
   line-height: $line-height;
 }
 
-.bottom {
-  width: 100%;
-  max-width: 1200px;
-
-
-}
 
 .additional-features {
   width: 98%;
@@ -214,6 +208,8 @@ p {
   border: 2px solid white;
   overflow: hidden;
   transition: $transition;
+  color: $color2;
+
 
   &:hover {
     transition: $transition;
@@ -225,12 +221,19 @@ p {
 .part1 {
 border: 2px solid $color4;
 background-color: $color4;
+}
 
+.part2 {
+  border: 2px solid $color1;
 }
 
 .part3 {
   border: 2px solid $color4;
   background-color: $color4;
+}
+
+.part4 {
+  border: 2px solid $color1;
 }
 
 
@@ -254,4 +257,34 @@ background-color: $color4;
 
 .center-header {
   margin: $space auto;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-wrap {
+  width: 100%;
+}
+
+.side {
+  width: 50%;
+  float: $fl;
+  color: $color2;
+
+   &:hover h1 {
+     transition: $transition;
+     text-shadow: $text-shadow;
+   }
+}
+
+.thanks-box {
+  width: 40%;
+  margin: 0 auto;
+
+}
+
+.thanks-box-center {
+  width: 100%;
+  float: $fl;
+  margin: $space-and-half 0;
+  border: 2px solid $color2;
 }
