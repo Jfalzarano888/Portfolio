@@ -73,7 +73,7 @@ h3 {
   font-size: 2rem; }
 
 h4 {
-  font-size: 1.5rem; }
+  font-size: 2.5rem; }
 
 p {
   font-size: 1.25rem; }
@@ -98,22 +98,21 @@ p {
 
 .nav-text {
   width: 33.333%;
-  margin: 12px 0;
+  margin: 24px 0;
   float: left;
   text-align: center; }
 
 .top-main {
-  width: 100%;
-  padding: 16px 0; }
+  width: 97.5%;
+  margin: 24px 12px; }
 
 .feature-row {
-  width: 98%;
-  background: #D8D8D8;
-  margin: 0 auto;
-  color: #A22E2E;
-  overflow: hidden;
+  width: 100%;
   transition: linear 0.25s;
-  border: 2px solid #D8D8D8; }
+  border: 2px solid #D8D8D8;
+  background: #D8D8D8;
+  color: #A22E2E;
+  overflow: hidden; }
   .feature-row:hover {
     box-shadow: 0 0px 30px #888;
     transition: linear 0.25s;
@@ -142,13 +141,12 @@ p {
   margin: 36px auto;
   overflow: hidden; }
   .bottom-box:hover .line {
-    width: 80%;
+    width: 70%;
     transition: linear 0.25s; }
 
 .img {
   width: 20%;
   height: 100px;
-  padding: 0 24px 0 0;
   float: left;
   z-index: 2; }
 
@@ -175,7 +173,7 @@ p {
   transition: linear 0.25s; }
 
 .about {
-  width: 98%;
+  width: 97.5%;
   margin: 24px 12px;
   border: 2px solid white;
   overflow: hidden;
@@ -226,18 +224,47 @@ p {
   width: 50%;
   float: left;
   color: #A22E2E; }
-  .side:hover h1 {
+
+.side-a {
+  transition: linear 0.25s; }
+  .side-a:hover {
     transition: linear 0.25s;
     text-shadow: 10px 10px 40px #999; }
+  .side-a:hover .line {
+    width: 80%;
+    transition: linear 0.25s; }
+
+.side-b {
+  transition: linear 0.25s; }
+  .side-b:hover {
+    transition: linear 0.25s;
+    text-shadow: 10px 10px 40px #999; }
+  .side-b:hover .line {
+    width: 80%;
+    transition: linear 0.25s; }
 
 .thanks-box {
-  width: 40%;
-  margin: 0 auto; }
+  width: 100%;
+  margin: 80px 0 0 0; }
 
 .thanks-box-center {
-  width: 100%;
-  float: left;
+  max-width: 100%;
   margin: 36px 0;
-  border: 2px solid #A22E2E; }
+  float: left;
+  border-top: #A22E2E;
+  border-right: #D8D8D8;
+  border-bottom: #A22E2E;
+  border-left: #D8D8D8;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #D8D8D8; }
+  .thanks-box-center:hover {
+    transition: linear 0.25s;
+    box-shadow: 0 0px 30px #888; }
+
+.logo-wrap {
+  width: 30%;
+  padding: 0 24px 0 0;
+  float: left; }
 
 /*# sourceMappingURL=main.css.map */

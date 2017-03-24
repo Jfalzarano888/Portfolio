@@ -1,0 +1,74 @@
+
+<svg width="100%" height="auto" viewBox="124 29 164 132" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(124.000000, 30.000000)">
+        <g id="JoesLogo2">
+            <rect id="Rectangle-path" stroke="#000000" fill="#000000" x="93.0005924" y="0.816095133" width="19.9385737" height="126.086698"></rect>
+            <rect id="Rectangle-path" fill="#000000" x="93.0005924" y="0" width="70.8163135" height="25.0069748"></rect>
+            <rect id="Rectangle-path" fill="#000000" x="113.073684" y="40.8047566" width="28.876555" height="25.0069748"></rect>
+            <rect id="Rectangle-path" fill="#FFFFFF" x="41.7678742" y="0.247542289" width="19.5948052" height="24.57582"></rect>
+            <path d="M61.1907952,0.463119658 L61.1907952,24.607785 L41.9397585,24.607785 L41.9397585,0.463119658 L61.1907952,0.463119658 L61.1907952,0.463119658 Z M61.5345637,0.0319649202 L41.59599,0.0319649202 L41.59599,25.0389397 L61.5345637,25.0389397 L61.5345637,0.0319649202 L61.5345637,0.0319649202 Z" id="Shape" fill="#000000"></path>
+            <rect id="Rectangle-path" fill="#808080" x="30.5953976" y="0.0319649202" width="11.0005924" height="25.0069748"></rect>
+            <polygon id="Rectangle-path" fill="#404040" style="mix-blend-mode: darken;" points="82 0 93.0005924 0 93.0005924 127.400002 82 127.400002"></polygon>
+            <g id="_Group_" transform="translate(9.625518, 42.996535)">
+                <polygon id="Shape" fill="#FFFFFF" points="52.0809296 0.366481527 52.0809296 84.0105006 32.1423559 84.0105006 32.1423559 59.8658353 32.1423559 0.366481527"></polygon>
+                <polygon id="Shape" fill="#FFFFFF" points="32.1423559 59.8658353 32.1423559 84.0105006 0.171884256 84.0105006 0.171884256 59.8658353 20.9698792 59.8658353 20.9698792 60.0814127 31.9704716 60.0814127 31.9704716 59.8658353"></polygon>
+                <polygon id="Shape" fill="#808080" points="31.8733197 59.2477876 31.8733197 60.1068351 20.8727273 60.1068351 20.8727273 59.2477876 21.0446115 59.2477876"></polygon>
+                <polygon id="Shape" fill="#808080" points="31.8733197 -7.10542736e-15 31.8733197 59.7079664 21.0446115 59.7079664 21.0446115 47.6370418 20.8727273 47.6370418 20.8727273 -7.10542736e-15"></polygon>
+                <rect id="Rectangle-path" fill="#808080" x="20.9698792" y="47.7935027" width="0.828282828" height="12.0723327"></rect>
+                <rect id="Rectangle-path" fill="#FFFFFF" x="0.171884256" y="47.7935027" width="20.797995" height="12.0723327"></rect>
+                <polyline id="Shape" stroke="#231F20" points="32.1423559 59.8658353 32.1423559 0.366481527 52.0809296 0.366481527 52.0809296 84.0105006 32.1423559 84.0105006"></polyline>
+                <path d="M32.384613,59.8658353 L31.9704716,59.8658353" id="Shape" stroke="#231F20"></path>
+                <polyline id="Shape" stroke="#231F20" points="0.171884256 59.8658353 0.171884256 84.0105006 32.1423559 84.0105006"></polyline>
+                <polyline id="Shape" stroke="#231F20" points="0.171884256 59.8658353 0.171884256 47.7935027 20.9698792 47.7935027"></polyline>
+            </g>
+            <rect id="Rectangle-path" fill="#808080" x="0" y="90.4823026" width="9.62551834" height="36.9119458"></rect>
+        </g>
+        <g id="Words" transform="translate(58.694737, 0.000000)">
+            <g id="Group">
+                <rect id="Rectangle-10" x="0" y="0" width="19.8526316" height="17.1379978"></rect>
+                <text id="D" font-family="ArialMT, Arial" font-size="10.8014868" font-weight="normal" fill="#000000">
+                    <tspan x="8.63157895" y="10">D</tspan>
+                </text>
+            </g>
+            <g id="Group" transform="translate(2.589474, 56.826727)">
+                <rect id="Rectangle-10" x="0" y="0" width="19.8526316" height="17.1379978"></rect>
+                <text id="i" font-family="ArialMT, Arial" font-size="10.8014868" font-weight="normal" fill="#000000">
+                    <tspan x="8.63157895" y="10">i</tspan>
+                </text>
+            </g>
+            <g id="Group" transform="translate(0.000000, 74.780820)">
+                <rect id="Rectangle-10" x="0" y="-1.42108547e-14" width="19.8526316" height="17.1379978"></rect>
+                <text id="g" font-family="ArialMT, Arial" font-size="10.8014868" font-weight="normal" fill="#000000">
+                    <tspan x="8.63157895" y="10">g</tspan>
+                </text>
+            </g>
+            <g id="Group" transform="translate(0.000000, 95.183198)">
+                <rect id="Rectangle-10" x="0" y="1.42108547e-14" width="19.8526316" height="17.1379978"></rect>
+                <text id="n" font-family="ArialMT, Arial" font-size="10.8014868" font-weight="normal" fill="#000000">
+                    <tspan x="8.63157895" y="10">n</tspan>
+                </text>
+            </g>
+            <g id="Group" transform="translate(0.000000, 112.321196)">
+                <rect id="Rectangle-10" x="0" y="0" width="19.8526316" height="17.1379978"></rect>
+                <text id="s" font-family="ArialMT, Arial" font-size="10.8014868" font-weight="normal" fill="#000000">
+                    <tspan x="8.63157895" y="10">s</tspan>
+                </text>
+            </g>
+            <g id="Group" transform="translate(0.000000, 19.886216)">
+                <rect id="Rectangle-10" x="0" y="0" width="19.8526316" height="17.1379978"></rect>
+                <text id="e" font-family="ArialMT, Arial" font-size="10.8014868" font-weight="normal" fill="#000000">
+                    <tspan x="8.63157895" y="10">e</tspan>
+                </text>
+            </g>
+            <g id="Group" transform="translate(0.000000, 36.640579)">
+                <rect id="Rectangle-10" x="0" y="0" width="19.8526316" height="17.1379978"></rect>
+                <text id="s" font-family="ArialMT, Arial" font-size="10.8014868" font-weight="normal" fill="#000000">
+                    <tspan x="8.63157895" y="10">s</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
