@@ -111,7 +111,7 @@ p {
 
 .top-main {
   width: 97.5%;
-  margin: $space $space-half;
+  margin: $space-half $space-half;
 }
 
 .feature-row {
@@ -165,8 +165,7 @@ p {
 
 .img {
   width: 20%;
-  height: 100px;
-
+  height: 110px;
   float: $fl;
   z-index: 2;
 }
