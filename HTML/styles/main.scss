@@ -281,12 +281,14 @@ background-color: $color4;
 }
 
 .side-a {
-    transition: $transition;
-  &:hover {
+  transition: $transition;
+
+&:hover {
   transition: $transition;
   text-shadow: $text-shadow;
-       }
-  &:hover .line-two {
+ }
+
+ &:hover .line-two {
     width: 80%;
     transition: $transition;
     }
@@ -294,10 +296,12 @@ background-color: $color4;
 
   .side-b {
       transition: $transition;
+
   &:hover {
     transition: $transition;
     text-shadow: $text-shadow;
  }
+
    &:hover .line-two {
       width: 80%;
       transition: $transition;
@@ -331,4 +335,54 @@ background-color: $color4;
   width: 30%;
   padding: 0 $pad-and-half 0 0;
   float: $fl;
+}
+
+
+// Media Quieries -------------------------------------------------------------
+
+@media screen and (max-width: 1116px) {
+  h2 {
+    font-size: 2rem;
+}
+
+  .subtext p {
+    font-size: 1rem;
+}
+
+.center-header {
+  margin: $space-half auto;
+}
+
+}
+
+@media screen and (max-width: 796px) {
+  h3 {
+    font-size: 1.5rem;
+}
+
+  h2 {
+    font-size: 1.5rem;
+}
+
+  .phone-image {
+  height: 120px;
+   margin: $space-half 0 0 0;
+}
+
+  .plan-image {
+    height: 120px;
+    margin: $space-half 0 0 0;
+}
+
+  .subtext p {
+    font-size: .75rem;
+  }
+
+  .about-text-wrap p {
+    font-size: .75rem;
+  }
+
+  .svg-wrap {
+    margin: $space-and-half 0 0 0;
+  }
 }
