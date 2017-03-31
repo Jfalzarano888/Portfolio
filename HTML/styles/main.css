@@ -285,28 +285,43 @@ p {
 
   .center-header {
     margin: 12px auto; } }
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 1024px) {
   h3 {
     font-size: 1.5rem; }
 
   h2 {
     font-size: 1.5rem; }
 
+  h1 {
+    font-size: 1.5rem; }
+
   .phone-image {
-    height: 120px;
-    margin: 12px 0 0 0; }
+    height: 110px; }
 
   .plan-image {
-    height: 120px;
-    margin: 12px 0 0 0; }
+    height: 120px; }
+
+  .delivered-image {
+    height: 120px; }
 
   .subtext p {
-    font-size: .75rem; }
+    width: 90%;
+    margin: 0 auto;
+    font-size: .9rem; }
+
+  .subtext {
+    padding-top: 8px; }
 
   .about-text-wrap p {
-    font-size: .75rem; }
+    font-size: 1rem; }
 
   .svg-wrap {
-    margin: 36px 0 0 0; } }
+    margin: 36px 0 0 0; }
+
+  .thanks-box {
+    margin-top: 36px; }
+
+  .thanks-box h4 {
+    font-size: 2rem; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -355,7 +355,7 @@ background-color: $color4;
 
 }
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 1024px) {
   h3 {
     font-size: 1.5rem;
 }
@@ -364,25 +364,46 @@ background-color: $color4;
     font-size: 1.5rem;
 }
 
+  h1 {
+    font-size: 1.5rem;
+  }
+
   .phone-image {
-  height: 120px;
-   margin: $space-half 0 0 0;
+  height: 110px;
 }
 
   .plan-image {
     height: 120px;
-    margin: $space-half 0 0 0;
+
+}
+
+.delivered-image {
+  height: 120px;
 }
 
   .subtext p {
-    font-size: .75rem;
+    width: 90%;
+    margin: 0 auto;
+    font-size: .9rem;
+  }
+
+  .subtext {
+    padding-top: $pad-half;
   }
 
   .about-text-wrap p {
-    font-size: .75rem;
+    font-size: 1rem;
   }
 
   .svg-wrap {
     margin: $space-and-half 0 0 0;
+  }
+
+  .thanks-box {
+    margin-top: $space-and-half;
+  }
+
+  .thanks-box h4 {
+    font-size: 2rem;
   }
 }
