@@ -91,9 +91,9 @@ p {
 }
 
 .nav-banner {
-  background-color: $color2;
   width: 100%;
   min-height: 80px;
+  background-color: $color2;
 
 }
 
@@ -135,7 +135,10 @@ p {
   margin: $space 0;
   float: left;
   text-align: center;
+}
 
+.call-now {
+  display: none;
 }
 
 .subtext {
@@ -356,23 +359,23 @@ background-color: $color4;
 }
 
 @media screen and (max-width: 1024px) {
-  h3 {
+h3 {
     font-size: 1.5rem;
 }
 
-  h2 {
+h2 {
     font-size: 1.5rem;
 }
 
-  h1 {
+h1 {
     font-size: 1.5rem;
   }
 
-  .phone-image {
+.phone-image {
   height: 110px;
 }
 
-  .plan-image {
+.plan-image {
     height: 120px;
 
 }
@@ -381,29 +384,109 @@ background-color: $color4;
   height: 120px;
 }
 
-  .subtext p {
+.subtext p {
     width: 90%;
     margin: 0 auto;
     font-size: .9rem;
   }
 
-  .subtext {
+.subtext {
     padding-top: $pad-half;
   }
 
-  .about-text-wrap p {
+.about-text-wrap p {
     font-size: 1rem;
   }
 
-  .svg-wrap {
+.svg-wrap {
     margin: $space-and-half 0 0 0;
   }
 
-  .thanks-box {
+.thanks-box {
     margin-top: $space-and-half;
   }
 
-  .thanks-box h4 {
+.thanks-box h4 {
     font-size: 2rem;
   }
+}
+
+@media screen and (max-width: 375px) {
+
+.menu-item {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+.nav-text {
+    width: 33.333%;
+    margin: $space 0;
+    float: left;
+    text-align: center;
+  }
+
+.top-main {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .feature-row {
+    width: 100%;
+    transition: $none;
+    border: none;
+    background: none;
+    color: $color2;
+    overflow: none;
+
+    &:hover {
+      transition: $none;
+      border: $none;
+      box-shadow: $none;
+    }
+  }
+
+
+.feature {
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+}
+
+.headline h2 {
+  padding-top: $pad;
+}
+
+.feature1 {
+  background-color: $color4;
+}
+
+.feature3 {
+  background-color: $color4;
+}
+
+.subtext p {
+  width: 100%;
+  float: none;
+  font-size: .75rem;
+  text-align: center;
+}
+
+.main-images {
+  width: 200px;
+  height: 160px;
+}
+
+.bottom {
+  display: none;
+}
+
+.call-now {
+  display: inherit;
+  width: 100%;
+  margin: $space-half 0 $space-half 0;
+  background-color: $color2;
+  color: $color1;
+}
+
 }
