@@ -51,12 +51,24 @@ font-size: $font-size;
 a {
   color: $color1;
   text-decoration: none;
+
+  &:hover {
+    color: $color3;
+  }
+}
+
+.indicator {
+  border-width: 3px;
+  border-style: solid;
+  border-color: $color3 $color2 $color3 $color2;
+  color: $color3;
 }
 
 h1 {
+  transition: $transition;
   font-size: 2rem;
   text-align: center;
-  transition: $transition;
+
 }
 
 h2 {
@@ -73,12 +85,13 @@ h3 {
 }
 
 h4 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 p {
   font-size: 1.25rem;
 }
+
 
 .site-wrap {
   position: relative;
@@ -106,6 +119,7 @@ p {
   width: 33.333%;
   margin: $space 0;
   float: left;
+  color: $color1;
   text-align: center;
 }
 
@@ -123,9 +137,9 @@ p {
   overflow: hidden;
 
   &:hover {
-    box-shadow: $box-shadow;
     transition: $transition;
     border: 2px solid $color2;
+    box-shadow: $box-shadow;
   }
 }
 
@@ -144,7 +158,7 @@ p {
 .subtext {
   width: 90%;
   margin: 0 auto;
-  padding: $pad-and-half 0 0 0;
+  padding-top: $pad-and-half;
   line-height: $line-height;
 }
 
@@ -191,22 +205,22 @@ p {
   background: url('../svgs/strategy.svg') no-repeat center center;
 }
 
-.line-one{
+ .line-one {
   position: relative;
   left: 30px;
   width: 200px;
   height: 2px;
   margin: $space-half auto;
-  background-color: $color2;
   transition: $transition;
+  background-color: $color2;
 }
 
 .line-two {
   width: 200px;
   height: 2px;
   margin: $space-half auto;
-  background-color: $color2;
   transition: $transition;
+  background-color: $color2;
 }
 
 
@@ -217,10 +231,10 @@ p {
 .about {
   width: 97.5%;
   margin: $space $space-half;
-  border: 2px solid white;
-  overflow: hidden;
   transition: $transition;
+  border: 2px solid white;
   color: $color2;
+  overflow: hidden;
 
 
   &:hover {
@@ -252,7 +266,7 @@ background-color: $color4;
 
 .svg-wrap {
   width: 20%;
-  padding: 0 $pad-and-half 0 0;
+  padding-right: $pad-and-half;
   float: left;
 }
 
@@ -268,8 +282,8 @@ background-color: $color4;
 }
 
 .center-header {
-  margin: $space auto;
   width: 100%;
+  margin: $space auto;
   text-align: center;
 }
 
@@ -298,7 +312,7 @@ background-color: $color4;
   }
 
   .side-b {
-      transition: $transition;
+    transition: $transition;
 
   &:hover {
     transition: $transition;
@@ -313,7 +327,8 @@ background-color: $color4;
 
 .thanks-box {
   width: 100%;
-  margin: 60px 0 0 0;
+  margin-top: $space-and-half;
+
 }
 
 .thanks-box-center {
@@ -335,15 +350,19 @@ background-color: $color4;
 }
 
 .logo-wrap {
-  width: 30%;
-  padding: 0 $pad-and-half 0 0;
+  width: 15%;
+  padding-right: $pad-and-half;
   float: $fl;
+}
+
+.mobile-header {
+  display: none;
 }
 
 
 // Media Quieries -------------------------------------------------------------
 
-@media screen and (max-width: 1116px) {
+@media screen and (max-width: 1200px) {
   h2 {
     font-size: 2rem;
 }
@@ -354,6 +373,18 @@ background-color: $color4;
 
 .center-header {
   margin: $space-half auto;
+}
+
+.feature-row {
+  width: 99%;
+}
+
+.thanks-box {
+  margin-top: $space;
+}
+.svg-wrap-partycomputer {
+  width: 100%;
+
 }
 
 }
@@ -369,6 +400,10 @@ h2 {
 
 h1 {
     font-size: 1.5rem;
+  }
+
+  .feature-row {
+    width: 99%;
   }
 
 .phone-image {
@@ -403,11 +438,15 @@ h1 {
   }
 
 .thanks-box {
-    margin-top: $space-and-half;
+  margin-top: $space
   }
 
 .thanks-box h4 {
     font-size: 2rem;
+  }
+
+  .about {
+    width: 96.5%;
   }
 }
 
@@ -433,15 +472,15 @@ h1 {
   .feature-row {
     width: 100%;
     transition: $none;
-    border: none;
+    border: 0;
     background: none;
     color: $color2;
     overflow: none;
 
     &:hover {
-      transition: $none;
+      transition: none;
       border: $none;
-      box-shadow: $none;
+      box-shadow: none;
     }
   }
 
@@ -489,9 +528,89 @@ h1 {
   color: $color1;
 }
 
+.about {
+  width: 100%;
+  margin: 0 auto;
+  transition: $transition;
+  border: 0;
+  color: $color2;
+  overflow: hidden;
+
+  &:hover {
+    transition: none;
+    border: $none;
+    box-shadow: none;
+  }
 }
 
-@media screen and (max-width: 375px) {
+.svg-wrap {
+  width: 30%;
+  margin: 0 auto;
+  padding: 0 0 0 0;
+  float: none;
+}
+
+.about-text-wrap {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mobile-header {
+  display: inherit;
+  margin-top: $space;
+  color: $color2;
+  background-color: $color1;
+
+}
+
+.thanks-box {
+  margin-top: $space-and-half;
+}
+
+.thanks-box h4 {
+    font-size: 1.5rem;
+  }
+
+.logo-wrap {
+    width: 30%;
+  }
+
+.svg-wrap-contact {
+  width: 30%;
+  margin: $space auto;
+}
+
+.side {
+  width: 100%;
+  float: none;
+}
+
+.side-a {
+  margin: $space 0;
+  background-color: $color4;
+}
+
+ .center-header {
+  display: none;
+}
+
+.svg-wrap-partycomputer {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.svg-wrap-partyphone {
+  width: 70%;
+  margin: $space-half auto;
+}
+
+.line-two {
+  display: none;
+}
+}
+
+@media screen and (max-width: 560px) {
 
   .menu-item {
       width: 90%;
@@ -513,7 +632,7 @@ h1 {
     .feature-row {
       width: 100%;
       transition: $none;
-      border: none;
+      border: 0;
       background: none;
       color: $color2;
       overflow: none;
@@ -548,7 +667,7 @@ h1 {
   .subtext p {
     width: 100%;
     float: none;
-    font-size: .75rem;
+    font-size: 1rem;
     text-align: center;
   }
 
@@ -567,5 +686,26 @@ h1 {
     margin: $space-half 0 $space-half 0;
     background-color: $color2;
     color: $color1;
+  }
+
+  .about-text-wrap p {
+    font-size: .9rem;
+  }
+
+  .svg-wrap {
+    width: 50%;
+  }
+
+  .svg-wrap-partycomputer {
+    width: 95%;
+    padding-right: none;
+  }
+
+  .svg-wrap-partyphone {
+    width: 95%;
+  }
+
+  .thanks-box-center {
+    display: none;
   }
 }
