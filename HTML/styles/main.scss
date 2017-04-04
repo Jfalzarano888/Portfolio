@@ -411,10 +411,10 @@ h1 {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 860px) {
 
 .menu-item {
-    width: 90%;
+    width: 50%;
     margin: 0 auto;
   }
 
@@ -468,13 +468,13 @@ h1 {
 .subtext p {
   width: 100%;
   float: none;
-  font-size: .75rem;
+  font-size: 1rem;
   text-align: center;
 }
 
 .main-images {
-  width: 200px;
-  height: 160px;
+  width: 280px;
+  height: 200px;
 }
 
 .bottom {
@@ -489,4 +489,83 @@ h1 {
   color: $color1;
 }
 
+}
+
+@media screen and (max-width: 375px) {
+
+  .menu-item {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+  .nav-text {
+      width: 33.333%;
+      margin: $space 0;
+      float: left;
+      text-align: center;
+    }
+
+  .top-main {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .feature-row {
+      width: 100%;
+      transition: $none;
+      border: none;
+      background: none;
+      color: $color2;
+      overflow: none;
+
+      &:hover {
+        transition: $none;
+        border: $none;
+        box-shadow: $none;
+      }
+    }
+
+
+  .feature {
+      width: 100%;
+      margin: 0 auto;
+      float: none;
+      text-align: center;
+  }
+
+  .headline h2 {
+    padding-top: $pad;
+  }
+
+  .feature1 {
+    background-color: $color4;
+  }
+
+  .feature3 {
+    background-color: $color4;
+  }
+
+  .subtext p {
+    width: 100%;
+    float: none;
+    font-size: .75rem;
+    text-align: center;
+  }
+
+  .main-images {
+    width: 200px;
+    height: 160px;
+  }
+
+  .bottom {
+    display: none;
+  }
+
+  .call-now {
+    display: inherit;
+    width: 100%;
+    margin: $space-half 0 $space-half 0;
+    background-color: $color2;
+    color: $color1;
+  }
 }
