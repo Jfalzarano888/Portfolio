@@ -450,7 +450,7 @@ h1 {
   }
 }
 
-@media screen and (max-width: 860px) {
+@media handheld, screen and (max-width: 860px) {
 
 .menu-item {
     width: 50%;
@@ -610,7 +610,7 @@ h1 {
 }
 }
 
-@media screen and (max-width: 560px) {
+@media handheld, screen and (max-width: 560px) {
 
   .menu-item {
       width: 90%;
