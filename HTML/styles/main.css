@@ -597,6 +597,9 @@ p {
       text-shadow: none; }
     .side-b:hover .line-two {
       width: 0;
-      transition: none; } }
+      transition: none; }
+
+  .center-info {
+    color: #A22E2E; } }
 
 /*# sourceMappingURL=main.css.map */
