@@ -300,29 +300,29 @@ background-color: $color4;
 .side-a {
   transition: $transition;
 
-&:hover {
-  transition: $transition;
-  text-shadow: $text-shadow;
- }
+    &:hover {
+      transition: $transition;
+      text-shadow: $text-shadow;
+     }
 
- &:hover .line-two {
-    width: 80%;
-    transition: $transition;
-    }
+      &:hover .line-two {
+        width: 80%;
+        transition: $transition;
+        }
   }
 
   .side-b {
     transition: $transition;
 
-  &:hover {
-    transition: $transition;
-    text-shadow: $text-shadow;
- }
+      &:hover {
+        transition: $transition;
+        text-shadow: $text-shadow;
+     }
 
-   &:hover .line-two {
-      width: 80%;
-      transition: $transition;
-      }
+       &:hover .line-two {
+          width: 80%;
+          transition: $transition;
+          }
     }
 
 .thanks-box {
@@ -390,6 +390,7 @@ background-color: $color4;
 }
 
 @media screen and (max-width: 1024px) {
+//main page ---------------------------------------------------------
 h3 {
     font-size: 1.5rem;
 }
@@ -429,6 +430,8 @@ h1 {
     padding-top: $pad-half;
   }
 
+// end of main page adjustments and beginning of about  -------------------------------------------
+
 .about-text-wrap p {
     font-size: 1rem;
   }
@@ -437,20 +440,29 @@ h1 {
     margin: $space-and-half 0 0 0;
   }
 
+  .about {
+    width: 96.5%;
+  }
+
+  // end of about and beginning of contact --------------------------------------------------
+
 .thanks-box {
     margin-top: $space;
   }
+
+.logo-wrap {
+  padding-top: $pad;
+}
 
 .thanks-box h4 {
     font-size: 2rem;
   }
 
-  .about {
-    width: 96.5%;
-  }
 }
 
 @media screen and (max-width: 860px) {
+
+//main page ---------------------------------------------------------
 
 .menu-item {
     width: 50%;
@@ -528,6 +540,9 @@ h1 {
   color: $color1;
 }
 
+// end of main page adjustments and beginning of about  -------------------------------------------
+
+
 .about {
   width: 100%;
   margin: 0 auto;
@@ -555,6 +570,9 @@ h1 {
   margin: 0 auto;
   text-align: center;
 }
+
+// end of about and beginning of contact --------------------------------------------------
+
 
 .mobile-header {
   display: inherit;
@@ -588,8 +606,33 @@ h1 {
 
 .side-a {
   margin: $space 0;
+  transition: none;
   background-color: $color4;
-}
+
+    &:hover {
+      transition: none;
+      text-shadow: none;
+     }
+
+    &:hover .line-two {
+      width: 0;
+      transition: none;
+      }
+  }
+
+  .side-b {
+    transition: none;
+
+      &:hover {
+        transition: none;
+        text-shadow: none;
+     }
+
+       &:hover .line-two {
+         width: 0;
+         transition: none;
+      }
+  }
 
  .center-header {
   display: none;
@@ -607,6 +650,13 @@ h1 {
 
 .line-two {
   display: none;
+}
+}
+
+@media screen and (max-width: 667px) {
+
+.thanks-box {
+  margin-top: $space;
 }
 }
 
@@ -696,6 +746,9 @@ h1 {
     width: 50%;
   }
 
+  // end of about and beginning of contact --------------------------------------------------
+
+
   .svg-wrap-partycomputer {
     width: 95%;
     padding-right: none;
@@ -708,4 +761,35 @@ h1 {
   .thanks-box-center {
     display: none;
   }
+
+  .side {
+    color: $color2;
+  }
+
+  .side-a {
+    transition: none;
+
+      &:hover {
+        transition: none;
+        text-shadow: none;
+       }
+
+      &:hover .line-two {
+        width: 0;
+        transition: none;
+        }
+    }
+
+    .side-b {
+      transition: none;
+
+        &:hover {
+          transition: none;
+          text-shadow: none;
+       }
+       &:hover .line-two {
+           width: 0;
+           transition: none;
+        }
+    }
 }
