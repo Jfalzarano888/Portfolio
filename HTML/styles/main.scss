@@ -3,15 +3,13 @@
 
 //common styles throughout the websites.
 
-$color1: #F1F1F1;
-$color2: #A22E2E;
-$color3: #9B9B9B;
-$color4: #D8D8D8;
-$inline: inline-block;
-$fl: left;
+$blue: #074D7F;
+$orange: rgba(237, 90, 33, .8);
+$yellow: #EDBD00;
+$red: #930000;
+$grey: #E6E8E6;
 $transition: linear .25s;
-$text-shadow: 10px 10px 40px #999;
-$box-shadow: 0 0px 30px #888;
+$box-shadow: 5px 5px 20px #999;
 $border-style: solid;
 $none: 0;
 
@@ -38,297 +36,135 @@ $space-double: $space * 2;
 $space-triple: $space * 3;
 
 
+* { margin: 0; padding: 0;  box-sizing: border-box;}
+
 html,
 body {
-position: relative;
 width: 100%;
 height: 100%;
-margin: 0 auto;
 font-family: Helvetica, "Times New Roman", sans-serif;
 font-size: $font-size;
 }
 
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+
 a {
-  color: $color1;
   text-decoration: none;
 }
 
-h1 {
-  font-size: 2rem;
-  text-align: center;
-  transition: $transition;
+nav {
+  position: absolute;
+  width: 100%;
+  background-color: $orange;
 }
 
-h2 {
-  font-size: 2.75rem;
-  font-weight: 400;
-  text-align: center;
-
-}
-
-h3 {
-  display: inline;
-  font-size: 2rem;
-
-}
-
-h4 {
-  font-size: 2.5rem;
-}
-
-p {
+nav a{
+  padding: 1rem;
+  float: right;
+  color: $grey;
   font-size: 1.25rem;
 }
 
-.site-wrap {
-  position: relative;
-  width: 80%;
-  max-width: 1200px;
+#landing-page {
+  height: 100vh;
+  background: url('../svgs/landing-img.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing-text {
+  padding: 1.5rem;
+  background-color: rgba(0,0,0,.1);
+  width: 100%;
+  border: 4px solid $orange;
+  border-right: none;
+  border-left: none;
+  color: white;
+  position: absolute;
+  top: 70%;
+}
+
+h1 span {
+  font-size: 2.5rem;
+  display: block;
+  margin: .2rem 0 0 0;
+  text-align: center;
+}
+
+.pad-wrap {
+  padding: $pad;
+}
+
+#teamwork-design-wrap {
+  max-width: 100rem;
   margin: 0 auto;
-  background-color: $color1;
+}
+
+.teamwork {
+  width: 49%;
+  border: 2px solid $orange;
+  border-radius: 20px;
+  float: left;
+  margin: 0 .5% 0;
   box-shadow: $box-shadow;
-  overflow: hidden;
 }
 
-.nav-banner {
-  background-color: $color2;
-  width: 100%;
-  min-height: 80px;
-
-}
-
-.menu-item {
-  width: 40%;
-  margin: 0 auto;
-}
-
-.nav-text {
-  width: 33.333%;
-  margin: $space 0;
-  float: left;
+.teamwork h2 {
   text-align: center;
+  padding: $pad 0;
+  font-size: 2.5rem;
+  color: $orange;
 }
 
-.top-main {
-  width: 97.5%;
-  margin: $space-half $space-half;
+.teamwork p {
+  max-width: 30rem;
+  margin: 0 auto;
+  padding: $pad $pad;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: $orange;
 }
 
-.feature-row {
-  width: 100%;
-  transition: $transition;
-  border: 2px solid $color4;
-  background: $color4;
-  color: $color2;
-  overflow: hidden;
-
-  &:hover {
-    box-shadow: $box-shadow;
-    transition: $transition;
-    border: 2px solid $color2;
-  }
-}
-
-.feature {
-  width: 33.333%;
-  height: 100%;
-  margin: $space 0;
+.design {
+  width: 49%;
+  border: 2px solid $orange;
+  border-radius: 20px;
   float: left;
+  margin: 0 .5% 0;
+  box-shadow: $box-shadow;
+}
+
+.design h2 {
   text-align: center;
-
+  padding: $pad 0;
+  font-size: 2.5rem;
+  color: $orange;
 }
 
-.subtext {
-  width: 90%;
+.design p {
+  max-width: 30rem;
   margin: 0 auto;
-  padding: $pad-and-half 0 0 0;
-  line-height: $line-height;
+  padding: $pad $pad;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: $orange;
 }
-
-
-.additional-features {
-  width: 98%;
-  margin: 0 auto;
-  color: $color2;
-}
-
-.bottom-box {
-  width: 80%;
-  margin: $space-and-half auto;
-  overflow: hidden;
-
-  &:hover .line-one {
-    width: 75%;
-    transition: $transition;
-  }
-}
-
-.img {
-  width: 20%;
-  height: 150px;
-  float: $fl;
-  z-index: 2;
-}
-
-.phone-image {
-  width: 100%;
-  height: 100%;
-  background: url('../svgs/phone.svg') no-repeat center;
-}
-
-.delivered-image {
-  width: 100%;
-  height: 100%;
-  background: url('../svgs/man.svg') no-repeat center center;
-}
-
-.plan-image {
-  width: 100%;
-  height: 100%;
-  background: url('../svgs/strategy.svg') no-repeat center center;
-}
-
-.line-one{
-  position: relative;
-  left: 30px;
-  width: 200px;
-  height: 2px;
-  margin: $space-half auto;
-  background-color: $color2;
-  transition: $transition;
-}
-
-.line-two {
-  width: 200px;
-  height: 2px;
-  margin: $space-half auto;
-  background-color: $color2;
-  transition: $transition;
-}
-
-
-
-//about page
-
-
-.about {
-  width: 97.5%;
-  margin: $space $space-half;
-  border: 2px solid white;
-  overflow: hidden;
-  transition: $transition;
-  color: $color2;
-
-
-  &:hover {
-    transition: $transition;
-    border: 2px solid $color2;
-    box-shadow: $box-shadow;
-  }
-}
-
-.part1 {
-border: 2px solid $color4;
-background-color: $color4;
-}
-
-.part2 {
-  border: 2px solid $color1;
-}
-
-.part3 {
-  border: 2px solid $color4;
-  background-color: $color4;
-}
-
-.part4 {
-  border: 2px solid $color1;
-}
-
-
 
 .svg-wrap {
-  width: 20%;
-  padding: 0 $pad-and-half 0 0;
+  max-width: 12rem;
+  margin: 0 auto;
+  opacity: .5;
+}
+
+#results {
+  width: 100%;
+  background-color: yellow;
   float: left;
-}
-
-.image-float {
-  width: 20%;
-  height: 120px;
-}
-
-.about-text-wrap {
-  width: 75%;
-  float: $fl;
-  line-height: $line-height;
-}
-
-.center-header {
-  margin: $space auto;
-  width: 100%;
-  text-align: center;
-}
-
-.contact-wrap {
-  width: 100%;
-}
-
-.side {
-  width: 50%;
-  float: $fl;
-  color: $color2;
-}
-
-.side-a {
-    transition: $transition;
-  &:hover {
-  transition: $transition;
-  text-shadow: $text-shadow;
-       }
-  &:hover .line-two {
-    width: 80%;
-    transition: $transition;
-    }
-  }
-
-  .side-b {
-      transition: $transition;
-  &:hover {
-    transition: $transition;
-    text-shadow: $text-shadow;
- }
-   &:hover .line-two {
-      width: 80%;
-      transition: $transition;
-      }
-    }
-
-.thanks-box {
-  width: 100%;
-  margin: 60px 0 0 0;
-}
-
-.thanks-box-center {
-  max-width: 100%;
-  margin: $space-and-half 0;
-  float: $fl;
-  border-top: $color2;
-  border-right: $color4;
-  border-bottom: $color2;
-  border-left: $color4;
-  border-width: 1px;
-  border-style: solid;
-  background-color: $color4;
-
-  &:hover {
-    transition: $transition;
-    box-shadow: $box-shadow;
-  }
-}
-
-.logo-wrap {
-  width: 30%;
-  padding: 0 $pad-and-half 0 0;
-  float: $fl;
 }
