@@ -83,6 +83,12 @@ a {
   border-width: 3px;
 }
 
+.bottom-yellow {
+  border-bottom-color: $yellow;
+  border-style: solid;
+  border-width: 3px;
+}
+
 .font-grey {
   color: $grey;
 }
@@ -187,7 +193,6 @@ h1 span {
 
 .blue-border {
   border: 2px solid $blue;
-  //border-radius: 20px;
   box-shadow: $box-shadow;
   border-left: none;
   border-right: none;
@@ -230,12 +235,11 @@ h1 span {
   max-width: 80rem;
   margin: $space-double auto;
   padding: 0 $pad-double;
-  //background-color: green;
 }
 
-.grey-fill {
-  background-color: #FFF5F4;
-}
+//.grey-fill {
+  //background-color: #FFF5F4;
+//}
 
 .border-grey {
   border: 2px solid $grey;
@@ -250,6 +254,7 @@ h1 span {
   opacity: .5;
   padding: $pad $pad;
 }
+
 
 .full-width-text-style {
   padding: 0 0 $pad-double;
@@ -268,6 +273,7 @@ h1 span {
   font-size: 1.25rem;
   line-height: 1.5;
 }
+
 
 footer {
   background-color: $grey;
