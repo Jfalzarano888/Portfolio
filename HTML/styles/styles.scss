@@ -1,6 +1,7 @@
 //common styles throughout the websites.
 
 $blue: rgba(7, 77, 127, .8);
+$blue-faded: rgba(7, 77, 127, .6);
 $orange: rgba(237, 90, 33, .8);
 $yellow: #EDBD00;
 $red: #930000;
@@ -8,6 +9,7 @@ $grey: #E6E8E6;
 $black: rgba(0, 0, 0, .8);
 $transition: linear .25s;
 $box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+$box-shadow2: 0 0 20px 2px rgba(0, 0, 0, 0.3);
 $border-style: solid;
 $none: 0;
 
@@ -57,37 +59,40 @@ a {
   text-decoration: none;
 }
 
-.main-nav {
-  position: relative;
+.header-nav {
   width: 100%;
   background-color: $black;
 }
 
-.main-nav img {
+.header-nav img {
   width: 3rem;
 }
 
 .blue-fill {
-  background-color: $blue;
+  background-color: $blue-faded;
 }
 
-.bottom-blue {
+.bottom-border-blue {
   border-bottom-color: $blue;
   border-style: solid;
   border-width: 3px;
 }
 
-.bottom-orange {
+//not sure if going to use for part of website.
+
+/* .border-bottom-orange {
   border-bottom-color: $orange;
   border-style: solid;
   border-width: 3px;
 }
 
-.bottom-yellow {
+.border-bottom-yellow {
   border-bottom-color: $yellow;
   border-style: solid;
   border-width: 3px;
-}
+} */
+
+//classes for fonts. Not sure if I want to do it this way
 
 .font-grey {
   color: $grey;
@@ -101,7 +106,10 @@ a {
   color: $blue;
 }
 
-.home-button-wrap {
+
+//not sure if I want to incorporate a home button yet.
+
+/* .home-button-wrap {
   position: absolute;
   display: inline-block;
   background-color: $black;
@@ -110,9 +118,9 @@ a {
   border: solid 2px $grey;
   top: 10px;
   left: 10px;
-}
+} */
 
-.navStyles{
+.nav-styles{
   padding: 1rem;
   float: right;
   color: $grey;
@@ -146,48 +154,71 @@ h1 span {
 }
 
 .svg-wrap {
-  max-width: 14rem;
-  margin: 0 auto;
+  max-width: 10rem;
   opacity: .5;
-  border: 4px solid $blue;
+
   border-radius: 50%;
-	box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+  border: 3px solid $blue;
+  transition: all .5s;
+    &:hover {
+      box-shadow: $box-shadow2;
+    }
 }
 
-.svg-wrap2 {
-  max-width: 14rem;
+.margin-align {
   margin: 0 auto;
-  opacity: .5;
-  border: 4px solid $orange;
-  border-radius: 50%;
-  box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4)
 }
 
+.center-contact-page-elements {
+  margin: 0 0 0 45%;
+}
 
-#top-half {
-  max-width: 80rem;
+.svg-wrap-unique {
+  max-width: 10rem;
+  margin: 0 auto;
+  opacity: .9;
+  background-color: $grey;
+  border-radius: 50%;
+  box-shadow: 0 0px #FFFFFF inset, 0 1px 20px rgba(34, 25, 25, 0.4);
+}
+
+ .svg-wrap-click-transition {
+  transition: 1.5s;
+  margin-left: 15%;
+}
+
+//styling for the index page. seperated into tiles
+
+.index-duo-tiles {
+  max-width: 55rem;
   margin: $space auto;
   padding: 0 $pad-double;
 }
 
-.box-left {
-  width: 49%;
-  margin: 0 .5% 0;
+.duo-box-left {
+  width: 48%;
+  margin: 0 2% 0 0;
   float: left;
-  box-shadow: $box-shadow;
+  transition: .5s ease;
+    &:hover {
+      box-shadow: $box-shadow2;
+    }
+    &:hover .svg-wrap {
+      box-shadow: $box-shadow2;
+    }
 }
 
-.box-left h2 {
+.duo-box-left h2 {
   padding: $pad 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
 }
 
-.box-left p {
+.duo-box-left p {
   max-width: 30rem;
   margin: 0 auto;
   padding: $pad $pad;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -198,7 +229,9 @@ h1 span {
   border-right: none;
 }
 
-.orange-border {
+//not sure if i'll need this.
+
+/* .orange-border {
   border: 2px solid $orange;
   box-shadow: $box-shadow;
   border-left: none;
@@ -208,38 +241,41 @@ h1 span {
 .orange-fill {
   background-color: $orange;
 }
-
-.box-right {
+ */
+.duo-box-right {
   width: 49%;
   float: left;
   margin: 0 .5% 0;
-  box-shadow: $box-shadow;
+  transition: 1s ease;
+  &:hover {
+    box-shadow: $box-shadow2;
+  }
+  &:hover .svg-wrap {
+    box-shadow: $box-shadow2;
+  }
 }
 
-.box-right h2 {
+.duo-box-right h2 {
   padding: $pad 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
 }
 
-.box-right p {
+.duo-box-right p {
   max-width: 30rem;
   margin: 0 auto;
   padding: $pad $pad;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
 .box-full-width {
-  position: relative;
+  display: block;
   max-width: 80rem;
+  //background-color: green;
   margin: $space-double auto;
-  padding: 0 $pad-double;
+  //transition: margin-left 2s;
 }
-
-//.grey-fill {
-  //background-color: #FFF5F4;
-//}
 
 .border-grey {
   border: 2px solid $grey;
@@ -248,34 +284,32 @@ h1 span {
   background-color: $blue;
 }
 
-.box-full-width img {
-  position: absolute;
-  max-width: 15rem;
-  opacity: .5;
-  padding: $pad $pad;
-}
-
 
 .full-width-text-style {
-  padding: 0 0 $pad-double;
-  max-width: 50rem;
+  position: relative;
+  max-width: 40rem;
+  min-height: 1rem;
+  max-height: 1rem;
   margin: 0 auto;
+  left: 6rem;
+  bottom: 8rem;
+  color: #ffffff;
+    p {
+      margin: 0 auto;
+      font-size: 1rem;
+      line-height: 1.5;
+  }
 }
 
-.full-width-text-style h2 {
-  padding: $pad 0;
-  font-size: 2.5rem;
-  text-align: center;
+.text-fade-in {
+  color: $blue;
+  transition: color 3s 1s ease;
 }
-
-.full-width-text-style p {
-  margin: 0 $space-double;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
 
 footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
   background-color: $grey;
   text-align: center;
 }
@@ -287,12 +321,6 @@ footer {
   border-bottom: 0;
 }
 
-.footer-nav-orange {
-  border: 2px solid $orange;
-  border-left: 0;
-  border-right: 0;
-  border-bottom: 0;
-}
 
 footer p {
   padding: $pad-half 0;
