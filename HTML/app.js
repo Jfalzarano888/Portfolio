@@ -1,4 +1,4 @@
-let phoneImg, deliverImg, gameplanImg, contact1, contact2, contact3, phoneClick, gameplanClick, deliverClick, functionObject, htmlText, html1, html2, html3;
+let phoneImg, deliverImg, gameplanImg, contact1, contact2, contact3, phoneClick, gameplanClick, deliverClick, functionObject;
 
 phoneImg = document.querySelector('#phone-img');
 deliverImg = document.querySelector('#deliver-img');
