@@ -215,7 +215,7 @@ h1 span {
 
 .text-fade-in {
   color: rgba(7, 77, 127, 0.8);
-  transition: color 3s 1s ease; }
+  transition: color 2s 1s ease; }
 
 footer {
   position: relative;
