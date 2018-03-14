@@ -1,4 +1,4 @@
-let phoneImg, deliverImg, gameplanImg, contact1, contact2, contact3, phoneClick, gameplanClick, deliverClick, functionObject;
+let phoneImg, deliverImg, gameplanImg, contact1, contact2, contact3, click;
 
 phoneImg = document.querySelector('#phone-img');
 deliverImg = document.querySelector('#deliver-img');
@@ -26,36 +26,56 @@ let addText = function() {
   }
 }
 
-functionObject = {
+ let imgMotion = function(image, contact, clickNumber, callback) {
+    click = clickNumber;
+    image.classList.add('svg-wrap-click-transition');
+    contact.classList.add('text-fade-in');
+    setTimeout(callback, 1000);
+    console.log("it worked BITCH");
+  }
 
-  func1: function() {
-      click = '1';
-      phoneImg.classList.add('svg-wrap-click-transition');
-      contact1.classList.add('text-fade-in');
-      setTimeout(addText, 1000);
-      phoneImg.removeEventListener('click', functionObject.func1);
-    },
-  func2: function() {
-      click = '3';
-      gameplanImg.classList.add('svg-wrap-click-transition');
-      contact2.classList.add('text-fade-in');
-      setTimeout(addText, 1000);
-      console.log('its been added');
-      gameplanImg.removeEventListener('click', functionObject.func2);
-    },
-  func3: function() {
-      click = '2';
-      deliverImg.classList.add('svg-wrap-click-transition');
-      contact3.classList.add('text-fade-in');
-      setTimeout(addText, 1000);
-      console.log('its been added');
-      deliverImg.removeEventListener('click', functionObject.func3);
-    }
-}
+  //phoneImg.addEventListener('click', phoneMotion);
 
-phoneImg.addEventListener('click', functionObject.func1);
-deliverImg.addEventListener('click', functionObject.func3);
-gameplanImg.addEventListener('click', functionObject.func2);
+  phoneImg.addEventListener('click', function(image, contact, clickNumber, callback){
+    return function(){imgMotion(phoneImg, contact1, '1', addText)}
+  }(phoneImg, contact1, '1', addText));
+  deliverImg.addEventListener('click', function(image, contact, clickNumber, callback){
+    return function(){imgMotion(deliverImg, contact3, '2', addText)}
+  }(deliverImg, contact3, '2', addText));
+  gameplanImg.addEventListener('click', function(image, contact, clickNumber, callback){
+    return function(){imgMotion(gameplanImg, contact2, '3', addText)}
+  }(gameplanImg, contact2, '3', addText));
+
+// functionObject = {
+//
+//   func1: function() {
+      // click = '1';
+      // phoneImg.classList.add('svg-wrap-click-transition');
+      // contact1.classList.add('text-fade-in');
+      // setTimeout(addText, 1000);
+      // phoneImg.removeEventListener('click', functionObject.func1);
+//     },
+//   func2: function() {
+      // click = '3';
+      // gameplanImg.classList.add('svg-wrap-click-transition');
+      // contact2.classList.add('text-fade-in');
+      // setTimeout(addText, 1000);
+      // console.log('its been added');
+      // gameplanImg.removeEventListener('click', functionObject.func2);
+//     },
+//   func3: function() {
+      // click = '2';
+      // deliverImg.classList.add('svg-wrap-click-transition');
+      // contact3.classList.add('text-fade-in');
+      // setTimeout(addText, 1000);
+      // console.log('its been added');
+      // deliverImg.removeEventListener('click', functionObject.func3);
+//     }
+// }
+
+// phoneImg.addEventListener('click', functionObject.func1);
+// deliverImg.addEventListener('click', functionObject.func3);
+// gameplanImg.addEventListener('click', functionObject.func2);
 
 
 
